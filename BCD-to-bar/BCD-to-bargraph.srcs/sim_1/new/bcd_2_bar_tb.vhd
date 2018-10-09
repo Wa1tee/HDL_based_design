@@ -49,10 +49,32 @@ begin
 
 	process
 	begin
-		for i in std_logic_vector range "0000" to "1001" loop
-			test_bcd <= i;
-			wait for 10ns;
-			assert test_bar
+		for i in 0 to 9 loop
+			case i is
+                when 0 =>
+                test_bcd <= "0000";
+                when 1 =>
+                test_bcd <= "0001";
+                when 2 =>
+                test_bcd <= "0010";
+                when 3 =>
+                test_bcd <= "0011";
+                when 4 =>
+                test_bcd <= "0100";
+                when 5 =>
+                test_bcd <= "0101";
+                when 6 =>
+                test_bcd <= "0110";
+                when 7 =>
+                test_bcd <= "0111";
+                when 8 =>
+                test_bcd <= "1000";
+                when 9 =>
+                test_bcd <= "1001";
+                when others => report "unreachable" severity failure;
+            end case;
+			wait for 20ns;
+			assert test_bar;
 		end loop;
 	end process;
 end tb;
