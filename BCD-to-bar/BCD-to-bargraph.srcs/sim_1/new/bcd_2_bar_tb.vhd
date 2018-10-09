@@ -32,7 +32,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity bcd_2_bar_tb is
---  Port ( );
 end bcd_2_bar_tb;
 
 architecture tb of bcd_2_bar is
@@ -74,7 +73,7 @@ begin
                 when others => report "unreachable" severity failure;
             end case;
 			wait for 20ns;
-			assert test_bar;
+			
 		end loop;
 	end process;
 end tb;
