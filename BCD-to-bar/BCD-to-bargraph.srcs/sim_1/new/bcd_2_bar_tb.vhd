@@ -42,38 +42,17 @@ architecture tb of bcd_2_bar is
 	);
 	end component;
 
-	signal test_bcd, test_bar : std_logic_vector;
+	signal test_bcd : std_logic_vector (3 downto 0);
+    signal test_bar : std_logic_vector (8 downto 0);
+    
 begin
 	DUT: bcd_2_bar port map (bcd => test_bcd, bar_graph => test_bar);
 
 	process
 	begin
-		for i in 0 to 9 loop
-			case i is
-                when 0 =>
-                test_bcd <= "0000";
-                when 1 =>
-                test_bcd <= "0001";
-                when 2 =>
-                test_bcd <= "0010";
-                when 3 =>
-                test_bcd <= "0011";
-                when 4 =>
-                test_bcd <= "0100";
-                when 5 =>
-                test_bcd <= "0101";
-                when 6 =>
-                test_bcd <= "0110";
-                when 7 =>
-                test_bcd <= "0111";
-                when 8 =>
-                test_bcd <= "1000";
-                when 9 =>
-                test_bcd <= "1001";
-                when others => report "unreachable" severity failure;
-            end case;
+		for i in 0 to 15 loop
+			test_bar <= "0000" + i;
 			wait for 20ns;
-			
 		end loop;
 	end process;
 end tb;
