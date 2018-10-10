@@ -37,8 +37,8 @@ end bcd_2_bar_tb;
 architecture tb of bcd_2_bar is
 	component bcd_2_bar
 	port (
-		bcd : in std_logic_vector (3 downto 0);
-        bar_graph : out std_logic_vector (8 downto 0)
+		bcd 		: in std_logic_vector (3 downto 0);
+        bar_graph   : out std_logic_vector (8 downto 0)
 	);
 	end component;
 

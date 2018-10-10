@@ -1,0 +1,5 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Failure: unreachable
+Time: 0 ps  Iteration: 0  Process: /bcd_2_bar/line__43  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/BCD-to-bar/BCD-to-bargraph.srcs/sources_1/new/bcd_2_bar.vhd
+$finish called at time : 0 fs : File "C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/BCD-to-bar/BCD-to-bargraph.srcs/sources_1/new/bcd_2_bar.vhd" Line 66
