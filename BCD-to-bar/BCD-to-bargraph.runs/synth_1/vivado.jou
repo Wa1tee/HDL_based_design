@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Wed Oct 10 12:42:14 2018
-# Process ID: 8488
+# Start of session at: Wed Oct 10 14:16:41 2018
+# Process ID: 6000
 # Current directory: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/BCD-to-bar/BCD-to-bargraph.runs/synth_1
 # Command line: vivado.exe -log bcd_2_bar.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bcd_2_bar.tcl
 # Log file: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/BCD-to-bar/BCD-to-bargraph.runs/synth_1/bcd_2_bar.vds

@@ -63,7 +63,8 @@ begin
         bar_graph <= "100000000";
         when "1001" =>
         bar_graph <= "000000000";
-        when others => report "unreachable" severity failure;
+        when others => 
+        bar_graph <= "111111111";
     end case;
 end process;
 

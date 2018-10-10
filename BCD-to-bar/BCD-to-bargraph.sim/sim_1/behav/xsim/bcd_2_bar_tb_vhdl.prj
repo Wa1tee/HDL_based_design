@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../BCD-to-bargraph.srcs/sources_1/new/bcd_2_bar.vhd" \
+"../../../../BCD-to-bargraph.srcs/sim_1/new/bcd_2_bar_tb.vhd" \
+
+# Do not sort compile order
+nosort

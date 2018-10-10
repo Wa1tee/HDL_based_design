@@ -34,7 +34,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity bcd_2_bar_tb is
 end bcd_2_bar_tb;
 
-architecture tb of bcd_2_bar is
+architecture tb of bcd_2_bar_tb is
   component bcd_2_bar
     port (
       bcd        : in std_logic_vector (3 downto 0);
@@ -42,7 +42,7 @@ architecture tb of bcd_2_bar is
     );
   end component;
 
-  signal test_bcd : std_logic_vector (3 downto 0);
+  signal test_bcd : std_logic_vector (3 downto 0) := (others => '0');
   signal test_bar : std_logic_vector (8 downto 0);
 
 begin
@@ -51,34 +51,8 @@ begin
   process
   begin
     for i in 0 to 15 loop
-      test_bcd <= "0000" + std_logic_vector(to_unsigned(i, 4));
-      wait for 20ns;
-      for j in 0 to 9 loop
-        case j is
-          when 0 =>
-          assert test_bar = "111111111" report "error" severity error;
-          when 1 =>
-          assert test_bar = "111111110" report "error" severity error;
-          when 2 =>
-          assert test_bar = "111111100" report "error" severity error;
-          when 3 =>
-          assert test_bar = "111111000" report "error" severity error;
-          when 4 =>
-          assert test_bar = "111110000" report "error" severity error;
-          when 5 =>
-          assert test_bar = "111100000" report "error" severity error;
-          when 6 =>
-          assert test_bar = "111000000" report "error" severity error;
-          when 7 =>
-          assert test_bar = "110000000" report "error" severity error;
-          when 8 =>
-          assert test_bar = "100000000" report "error" severity error;
-          when 9 =>
-          assert test_bar = "000000000" report "error" severity error;
-          when others => report "unreachable" severity error;
-        end case;
-      end loop;
-        
+      test_bcd <= std_logic_vector(to_signed(i, 4));
+      wait for 20ns;      
     end loop;
   end process;
 end tb;
