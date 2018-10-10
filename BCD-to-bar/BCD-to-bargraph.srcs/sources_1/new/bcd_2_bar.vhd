@@ -68,3 +68,24 @@ begin
 end process;
 
 end Behavioral;
+
+--architecture Behavioral of bcd_2_bar is
+
+--begin
+--    process (bcd)
+--    begin
+--        bar_graph <=    "111111111" when bcd = "0000";
+--        bar_graph <=    "111111110" when bcd = "0001";
+--        bar_graph <=    "111111100" when bcd = "0010";
+--        bar_graph <=    "111111000" when bcd = "0011";
+--        bar_graph <=    "111110000" when bcd = "0100";
+--        bar_graph <=    "111100000" when bcd = "0101";
+--        bar_graph <=    "111000000" when bcd = "0110";
+--        bar_graph <=    "110000000" when bcd = "0111";
+--        bar_graph <=    "100000000" when bcd = "1000";
+--        bar_graph <=    "000000000" when bcd = "1001";
+        
+--    end process;
+
+
+--end Behavioral;
