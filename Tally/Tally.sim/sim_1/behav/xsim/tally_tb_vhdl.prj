@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Tally.srcs/sources_1/new/tally.vhd" \
+"../../../../Tally.srcs/sources_1/new/tally_tb.vhd" \
+
+# Do not sort compile order
+nosort

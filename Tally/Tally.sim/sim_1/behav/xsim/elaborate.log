@@ -1,0 +1,7 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 92bc0ed7d5d44a319b03f9c73dfea614 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tally_tb_behav xil_defaultlib.tally_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] case statement does not cover all choices. 'others' clause is needed [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/Tally/Tally.srcs/sources_1/new/tally.vhd:73]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tally_tb in library work failed.
