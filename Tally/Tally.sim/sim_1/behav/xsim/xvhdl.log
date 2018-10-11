@@ -1,4 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/Tally/Tally.srcs/sources_1/new/tally.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tally
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/Tally/Tally.srcs/sources_1/new/tally_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity tally_tb

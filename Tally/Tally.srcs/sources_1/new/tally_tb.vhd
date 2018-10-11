@@ -50,8 +50,8 @@ begin
 
 	process
 	begin
-		for i in 0 to 2 loop
-		 	for j in 0 to 10 loop
+		for i in 0 to 7 loop
+		 	for j in 0 to 7 loop
 				test_A <= std_logic_vector(to_signed(i, 3));
 				test_B <= std_logic_vector(to_signed(j, 3));
 				wait for 10ns;

@@ -41,35 +41,7 @@ architecture Behavioral of tally is
 
 begin
 process (scoresA, scoresB)
---variable sumA : natural range 0 to 3 := 0;
---variable sumB : natural range 0 to 3 := 0;
 begin
-	
-	--for i in 0 to 2 loop
-	--	if scoresA(i) = '1' then
-	--		sumA := sumA + 1;
-	--	end if;
-		
-	--end loop;
-
-	--sumB := 0;
-	--for j in 0 to 2 loop
-	--	if scoresB(j) = '1' then
-	--		sumB := sumB + 1;
-	--	end if;
-		
-	--end loop;
-
-	--if (sumA = 0 and sumB = 0) then
-	--	winner <= "00";
-	--elsif (sumA > sumB) then
-	--	winner <= "01";
-	--elsif (sumA < sumB) then
-	--	winner <= "10";
-	--elsif (sumA = sumB) then
-	--	winner <= "11";
-	--end if;
-	
 	case(scoresA) is
 		when "000" => 
 			case(scoresB) is
@@ -131,6 +103,5 @@ begin
  			end case;
  		when others => winner <= "00";
 	end case;
-
 end process;
 end Behavioral;
