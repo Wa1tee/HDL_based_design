@@ -2,10 +2,10 @@
 -- Company: 
 -- Engineer: Antti Auranen
 -- 
--- Create Date: 11.10.2018 09:47:28
+-- Create Date: 17.10.2018 18:04:10
 -- Design Name: 
--- Module Name: counter - Behavioral
--- Project Name: 
+-- Module Name: doublecounter - Behavioral
+-- Project Name: HDL based design coursework
 -- Target Devices: 
 -- Tool Versions: 
 -- Description: 
@@ -31,29 +31,31 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity counter is
+entity doublecounter is
     Port ( clk		: in STD_LOGIC;
     	   reset 	: in STD_LOGIC;
            enable 	: in STD_LOGIC;
            load 	: in STD_LOGIC;
            down_up 	: in STD_LOGIC;
-           data 	: in std_logic_vector (3 downto 0);
-           count 	: out std_logic_vector (3 downto 0);
+           data 	: in std_logic_vector (7 downto 0);
+           count_0 	: out std_logic_vector (3 downto 0);
+           count_1 	: out std_logic_vector (3 downto 0);
            over 	: out STD_LOGIC);
-end counter;
+end doublecounter;
 
-architecture Behavioral of counter is
+architecture Behavioral of doublecounter is
 
 begin
 process (clk, reset, enable, load, down_up, data)
 	variable v_count : integer := 0;
-	variable v_over  : std_logic;
+	--variable v_over  : std_logic;
+	variable v_help  : std_logic_vector(7 downto 0);
 begin
 	if (rising_edge(clk)) then
 		--resetting
 		if (reset = '1') then
 			v_count := 0;
-			v_over := '0';
+			over <= '0';
 		else
 
 			if (enable = '1') then
@@ -64,8 +66,8 @@ begin
 					case(down_up) is
 						when '0' =>
 							--counter up
-							if (v_count = 15) then
-								v_over := '1';
+							if (v_count = 255) then
+								over <= '1';
 								v_count := 0;
 							else
 								v_count := v_count +1;
@@ -73,20 +75,19 @@ begin
 						when others =>
 							--counter down
 							if (v_count = 0) then
-								v_over := '1';
-								v_count := 15;
+								over <= '1';
+								v_count := 255;
 							else
 								v_count := v_count -1;
 							end if;
 					end case;
 				end if;
-			
 			end if;
 		end if;
-		over <= v_over;
-		count <= std_logic_vector(to_unsigned(v_count, 4));
+		
+		v_help := std_logic_vector(to_unsigned(v_count, 8));
+		count_0 <= v_help(7 downto 4);
+		count_1 <= v_help(3 downto 0);
 	end if;
-
-
 end process;
 end Behavioral;

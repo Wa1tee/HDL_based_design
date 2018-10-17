@@ -1,10 +1,10 @@
-
+----------------------------------------------------------------------------------
 -- Company: 
 -- Engineer: Antti Auranen
 -- 
--- Create Date: 11.10.2018 09:47:28
+-- Create Date: 17.10.2018 18:04:10
 -- Design Name: 
--- Module Name: counter_tb - Behavioral
+-- Module Name: doublecounter_tb - Behavioral
 -- Project Name: HDL based design coursework
 -- Target Devices: 
 -- Tool Versions: 
@@ -24,6 +24,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
 use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
@@ -31,18 +38,19 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity counter_tb is
-end counter_tb;
+entity doublecounter_tb is
+end doublecounter_tb;
 
-architecture tb of counter_tb is
-	component counter 
+architecture tb of doublecounter_tb is
+	component doublecounter 
 		Port ( clk      : in STD_LOGIC;
            reset    : in STD_LOGIC;
            enable   : in STD_LOGIC;
            load     : in STD_LOGIC;
            down_up  : in STD_LOGIC;
-           data     : in std_logic_vector (3 downto 0);
-           count    : out std_logic_vector (3 downto 0);
+           data     : in std_logic_vector (7 downto 0);
+           count_0  : out std_logic_vector (3 downto 0);
+           count_1  : out std_logic_vector (3 downto 0);
            overflow : out STD_LOGIC);
 	end component;
 
@@ -52,10 +60,11 @@ architecture tb of counter_tb is
   signal test_enable  : in STD_LOGIC;
   signal test_load    : in STD_LOGIC;
   signal test_down_up : in STD_LOGIC;
-  signal test_data    : in std_logic_vector (3 downto 0);
+  signal test_data    : in std_logic_vector (7 downto 0);
 
   --Outputs
-  signal test_count     : out std_logic_vector (3 downto 0);
+  signal test_count_0     : out std_logic_vector (3 downto 0);
+  signal test_count_1     : out std_logic_vector (3 downto 0);
   signal test_overflow  : out STD_LOGIC;
 begin
   DUT: counter port map (
@@ -65,7 +74,8 @@ begin
       load      => test_load,
       down_up   => test_down_up,
       data      => test_data,
-      count     => test_count,
+      count_0   => test_count_0,
+      count_1   => test_count_1,
       overflow  => test_overflow );
 
   clock:process
@@ -89,21 +99,22 @@ begin
           test_data <= "1010";
           test_load <= '1';
           wait for 20ns;
-          assert test_count = "0000" report "test_enable failed at 0" severity error;
-          
+          assert test_count_0 = "0000" report "test_enable failed at 0" severity error;
+          assert test_count_1 = "0000" report "test_enable failed at 0" severity error;
           assert test_overflow = '0' report "test_enable overflow failed at 0" severity error;
 
         when 1 =>
           test_down_up <= '0';
           wait for 20ns;
-          assert test_count = "0000" report "test_enable failed at 1" severity error;
-          
+          assert test_count_0 = "0000" report "test_enable failed at 1" severity error;
+          assert test_count_1 = "0000" report "test_enable failed at 1" severity error;
           assert test_overflow = '0' report "test_enable overflow failed at 1" severity error;
 
         when 2 =>
           test_down_up <= '1';
           wait for 20ns;
-          assert test_count = "0000" report "test_enable failed at 2" severity error;
+          assert test_count_0 = "0000" report "test_enable failed at 2" severity error;
+          assert test_count_1 = "0000" report "test_enable failed at 2" severity error;
           assert test_overflow = '0' report "test_enable overflow failed at 2" severity error;
 
         when others =>
@@ -119,7 +130,7 @@ begin
       test_down_up <= '1';
       v_testcount := v_testcount + std_logic_vector(to_signed(1, 4));
       wait for 20ns;
-      assert test_count = v_testcount report "counting up failed" severity error;
+      assert test_count_0 = v_testcount report "counting up failed" severity error;
       assert test_overflow = '0' report "overflow counting up" severity error;
     end loop;
 
@@ -132,7 +143,7 @@ begin
       test_down_up <= '0';
       v_testcount := v_testcount - std_logic_vector(to_signed(1, 4));
       wait for 20ns;
-      assert test_count = v_testcount report "counting down failed" severity error;
+      assert test_count_0 = v_testcount report "counting down failed" severity error;
       assert test_overflow = '0' report "overflow counting down" severity error;
     end loop;
 
@@ -147,11 +158,11 @@ begin
       
       test_load <= '1';
       wait for 20ns;
-      assert test_count = std_logic_vector(to_signed(i, 4)) report "data loading failed" severity error;
+      assert test_count_0 = std_logic_vector(to_signed(i, 4)) report "data loading failed" severity error;
 
       test_reset <= '1';
       wait for 20ns;
-      assert test_count = "0000" report "reset failed counting up" severity error;
+      assert test_count_0 = "0000" report "reset failed counting up" severity error;
     end loop;
 
     --count down 15 through 0
@@ -163,11 +174,11 @@ begin
       
       test_load <= '1';
       wait for 20ns;
-      assert test_count = std_logic_vector(to_signed(i, 4)) report "data loading failed" severity error;
+      assert test_count_0 = std_logic_vector(to_signed(i, 4)) report "data loading failed" severity error;
 
       test_reset <= '1';
       wait for 20ns;
-      assert test_count = "0000" report "reset failed counting up" severity error;
+      assert test_count_0 = "0000" report "reset failed counting up" severity error;
     end loop;
 
 
