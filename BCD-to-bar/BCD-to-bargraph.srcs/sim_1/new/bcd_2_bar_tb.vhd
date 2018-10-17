@@ -52,7 +52,21 @@ begin
   begin
     for i in 0 to 15 loop
       test_bcd <= std_logic_vector(to_signed(i, 4));
-      wait for 20ns;      
+      wait for 20ns;
+      case(std_logic_vector(to_signed(i, 4))) is
+              when "0000" => assert test_bar = "111111111" report "Error" severity error;
+              when "0001" => assert test_bar = "111111110" report "Error" severity error;
+              when "0010" => assert test_bar = "111111100" report "Error" severity error;
+              when "0011" => assert test_bar = "111111000" report "Error" severity error;
+              when "0100" => assert test_bar = "111110000" report "Error" severity error;
+              when "0101" => assert test_bar = "111100000" report "Error" severity error;
+              when "0110" => assert test_bar = "111000000" report "Error" severity error;
+              when "0111" => assert test_bar = "110000000" report "Error" severity error;
+              when "1000" => assert test_bar = "100000000" report "Error" severity error;
+              when "1001" => assert test_bar = "000000000" report "Error" severity error;
+              when others =>
+                null;
+      end case;      
     end loop;
   end process;
 end tb;

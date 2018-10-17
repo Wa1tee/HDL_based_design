@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1539170360">
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1539801414">
   <File Type="PA-TCL" Name="bcd_2_bar.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="bcd_2_bar_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="bcd_2_bar_reports.tcl"/>

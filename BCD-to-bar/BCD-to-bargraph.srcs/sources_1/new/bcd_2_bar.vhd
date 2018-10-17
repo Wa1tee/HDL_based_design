@@ -64,7 +64,7 @@ begin
         when "1001" =>
         bar_graph <= "000000000";
         when others => 
-        bar_graph <= "111111111";
+        null;
     end case;
 end process;
 
