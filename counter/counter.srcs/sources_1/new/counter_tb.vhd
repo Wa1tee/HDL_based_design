@@ -47,11 +47,11 @@ architecture tb of counter_tb is
 	end component;
 
   --Inputs
-  --signal test_clk     : in STD_LOGIC := '0';
-  signal test_reset   : in STD_LOGIC;
-  signal test_enable  : in STD_LOGIC;
-  signal test_load    : in STD_LOGIC;
-  signal test_down_up : in STD_LOGIC;
+  signal test_clk     : in STD_LOGIC := '0';
+  signal test_reset   : in STD_LOGIC := '0';
+  signal test_enable  : in STD_LOGIC := '0';
+  signal test_load    : in STD_LOGIC := '0';
+  signal test_down_up : in STD_LOGIC := '0';
   signal test_data    : in std_logic_vector (3 downto 0);
 
   --Outputs
@@ -68,41 +68,44 @@ begin
       count     => test_count,
       overflow  => test_overflow );
 
-  clock:process
+  clock : process
   begin
-    clk <= '1';
+    test_clk <= '1';
     wait for 10ns;
-    clk <= '0';
+    test_clk <= '0';
     wait for 10ns;
   end process clock;
 
-  test:process
+
+  test : process
   
   variable v_testcount : std_logic_vector(3 downto 0);
 
   begin
-    t_enable : for i in 0 to 2 loop
+    report "Test begin" severity note;
+      
+    for i in 0 to 2 loop
       test_enable <= '0';
       -- test cases where the count output should be "0000"
       case(i) is
         when 0 => 
           test_data <= "1010";
           test_load <= '1';
-          wait for 20ns;
+          wait for 10ns;
           assert test_count = "0000" report "test_enable failed at 0" severity error;
           
           assert test_overflow = '0' report "test_enable overflow failed at 0" severity error;
 
         when 1 =>
           test_down_up <= '0';
-          wait for 20ns;
+          wait for 10ns;
           assert test_count = "0000" report "test_enable failed at 1" severity error;
           
           assert test_overflow = '0' report "test_enable overflow failed at 1" severity error;
 
         when 2 =>
           test_down_up <= '1';
-          wait for 20ns;
+          wait for 10ns;
           assert test_count = "0000" report "test_enable failed at 2" severity error;
           assert test_overflow = '0' report "test_enable overflow failed at 2" severity error;
 
@@ -118,7 +121,7 @@ begin
       
       test_down_up <= '1';
       v_testcount := v_testcount + std_logic_vector(to_signed(1, 4));
-      wait for 20ns;
+      wait for 10ns;
       assert test_count = v_testcount report "counting up failed" severity error;
       assert test_overflow = '0' report "overflow counting up" severity error;
     end loop;
@@ -131,7 +134,7 @@ begin
     
       test_down_up <= '0';
       v_testcount := v_testcount - std_logic_vector(to_signed(1, 4));
-      wait for 20ns;
+      wait for 10ns;
       assert test_count = v_testcount report "counting down failed" severity error;
       assert test_overflow = '0' report "overflow counting down" severity error;
     end loop;
@@ -143,14 +146,14 @@ begin
     for i in 0 to 15 loop
       test_enable <= '1';
       test_data <= std_logic_vector(to_signed(i, 4));
-      wait for 20ns;
+      wait for 10ns;
       
       test_load <= '1';
-      wait for 20ns;
+      wait for 10ns;
       assert test_count = std_logic_vector(to_signed(i, 4)) report "data loading failed" severity error;
 
       test_reset <= '1';
-      wait for 20ns;
+      wait for 10ns;
       assert test_count = "0000" report "reset failed counting up" severity error;
     end loop;
 
@@ -159,14 +162,14 @@ begin
       test_enable <= '1';
 
       test_data <= std_logic_vector(to_signed(i, 4));
-      wait for 20ns;
+      wait for 10ns;
       
       test_load <= '1';
-      wait for 20ns;
+      wait for 10ns;
       assert test_count = std_logic_vector(to_signed(i, 4)) report "data loading failed" severity error;
 
       test_reset <= '1';
-      wait for 20ns;
+      wait for 10ns;
       assert test_count = "0000" report "reset failed counting up" severity error;
     end loop;
 
@@ -174,7 +177,7 @@ begin
     --test overflow
     test_enable <= '1';
     test_data <= std_logic_vector(to_signed(15, 4));
-    wait for 20ns;
+    wait for 10ns;
     test_load <= '1';
     test_down_up <= '1';
     wait for 15ns;
@@ -182,11 +185,12 @@ begin
 
     --test underflow
     test_data <= std_logic_vector(to_signed(0, 4));
-    wait for 20ns;
+    wait for 10ns;
     test_load <= '1';
     test_down_up <= '0';
     wait for 15ns;
     assert test_overflow = '1' report "overflow failed" severity error;
 
+    report "Test finished" severity note;
   end process test;
 end tb;

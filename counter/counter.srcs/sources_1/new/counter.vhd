@@ -49,44 +49,41 @@ process (clk, reset, enable, load, down_up, data)
 	variable v_count : integer := 0;
 	variable v_over  : std_logic;
 begin
-	if (rising_edge(clk)) then
+	if (reset = '1') then
 		--resetting
-		if (reset = '1') then
-			v_count := 0;
-			v_over := '0';
-		else
+		v_count := 0;
+		v_over := '0';
 
-			if (enable = '1') then
-				if (load = '1') then
-					--load data
-					v_count := to_integer(unsigned(data));
-				else	
-					case(down_up) is
-						when '0' =>
-							--counter up
-							if (v_count = 15) then
-								v_over := '1';
-								v_count := 0;
-							else
-								v_count := v_count +1;
-							end if;
-						when others =>
-							--counter down
-							if (v_count = 0) then
-								v_over := '1';
-								v_count := 15;
-							else
-								v_count := v_count -1;
-							end if;
-					end case;
-				end if;
-			
+	elsif (rising_edge(clk)) then
+
+		if (enable = '1') then
+			if (load = '1') then
+				--load data
+				v_count := to_integer(unsigned(data));
+			else	
+				case(down_up) is
+					when '0' =>
+						--counter up
+						if (v_count = 15) then
+							v_over := '1';
+							v_count := 0;
+						else
+							v_count := v_count +1;
+						end if;
+					when others =>
+					--counter down
+						if (v_count = 0) then
+							v_over := '1';
+							v_count := 15;
+						else
+							v_count := v_count -1;
+						end if;
+				end case;
 			end if;
 		end if;
+		
 		over <= v_over;
 		count <= std_logic_vector(to_unsigned(v_count, 4));
 	end if;
-
-
 end process;
 end Behavioral;

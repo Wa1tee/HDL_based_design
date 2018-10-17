@@ -46,7 +46,19 @@ end doublecounter;
 architecture Behavioral of doublecounter is
 
 begin
-process (clk, reset, enable, load, down_up, data)
+
+clock : process (reset, clock)
+begin
+  if (reset = '1') then
+    count_0 := '0';
+    count_1 := '0';
+    over 	<= '0';
+  elsif (rising_edge(clk)) then
+  	main
+  end if;
+end process clock;
+
+main : process (clk, reset, enable, load, down_up, data)
 	variable v_count : integer := 0;
 	--variable v_over  : std_logic;
 	variable v_help  : std_logic_vector(7 downto 0);
@@ -89,5 +101,5 @@ begin
 		count_0 <= v_help(7 downto 4);
 		count_1 <= v_help(3 downto 0);
 	end if;
-end process;
+end process main;
 end Behavioral;
