@@ -38,6 +38,8 @@ entity tally is
 end tally;
 
 architecture Behavioral of tally is
+	--variable v_A : integer := 0;
+	--variable v_B : integer := 0;
 
 begin
 process (scoresA, scoresB)

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1539237722">
   <File Type="PA-TCL" Name="tally_tb.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="tally_tb_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="tally_tb_reports.tcl"/>
   <File Type="RDS-RDS" Name="tally_tb.vds"/>
   <File Type="RDS-UTIL" Name="tally_tb_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="tally_tb_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="tally_tb.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="tally_tb_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="tally_tb_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/tally.vhd">
