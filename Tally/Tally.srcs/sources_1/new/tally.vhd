@@ -38,72 +38,32 @@ entity tally is
 end tally;
 
 architecture Behavioral of tally is
-	--variable v_A : integer := 0;
-	--variable v_B : integer := 0;
 
 begin
 process (scoresA, scoresB)
+	variable v_A : integer := 0;
+	variable v_B : integer := 0;
 begin
-	case(scoresA) is
-		when "000" => 
-			case(scoresB) is
-				when "000" => winner <= "00";
-				when others => winner <= "10";
-			end case;
-		when "100" =>
-			case(scoresB) is
-				when "000" => winner <= "01"; 
-				when "100" => winner <= "11";
-				when "010" => winner <= "11";
-				when "001" => winner <= "11";
-				when others => winner <= "10";
- 			end case;
- 		when "010" =>
-			case(scoresB) is
-				when "000" => winner <= "01"; 
-				when "100" => winner <= "11";
-				when "010" => winner <= "11";
-				when "001" => winner <= "11";
-				when others => winner <= "10";
- 			end case;
- 		when "001" =>
-			case(scoresB) is
-				when "000" => winner <= "01"; 
-				when "100" => winner <= "11";
-				when "010" => winner <= "11";
-				when "001" => winner <= "11";
-				when others => winner <= "10";
- 			end case;
- 		when "011" =>
-			case(scoresB) is
-				when "110" => winner <= "11";
-				when "101" => winner <= "11";
-				when "011" => winner <= "11";
-				when "111" => winner <= "10";
-				when others => winner <= "01";
- 			end case;
- 		when "101" =>
-			case(scoresB) is
-				when "110" => winner <= "11";
-				when "101" => winner <= "11";
-				when "011" => winner <= "11";
-				when "111" => winner <= "10";
-				when others => winner <= "01";
- 			end case;
- 		when "110" =>
-			case(scoresB) is
-				when "110" => winner <= "11";
-				when "101" => winner <= "11";
-				when "011" => winner <= "11";
-				when "111" => winner <= "10";
-				when others => winner <= "01";
- 			end case;
- 		when "111" =>
-			case(scoresB) is
-				when "111" => winner <= "11";
-				when others => winner <= "01";
- 			end case;
- 		when others => winner <= "00";
-	end case;
+	for i in 0 to 2 loop
+		if (scoresA(i) = '1') then
+			v_A := v_A + 1;
+		end if;
+	end loop;
+
+	for i in 0 to 2 loop
+		if (scoresB(i) = '1') then
+			v_B := v_B + 1;
+		end if;
+	end loop;
+
+	if (v_B = 0 and v_A = 0) then
+		winner <= "00";
+	elsif (v_B = v_A) then
+		winner <= "11";
+	elsif (v_A > v_B) then
+		winner <= "10";
+	elsif (v_A < v_B) then
+		winner <= "01";
+	end if;
 end process;
 end Behavioral;

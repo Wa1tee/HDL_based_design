@@ -1,2 +1,4 @@
 Vivado Simulator 2018.2
 Time resolution is 1 ps
+Error: Error
+Time: 1 us  Iteration: 0  Process: /tally_tb/line__140  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/Tally/Tally.srcs/sources_1/new/tally_tb.vhd

@@ -1,2 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity counter_tb
