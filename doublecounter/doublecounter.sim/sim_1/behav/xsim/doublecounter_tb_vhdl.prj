@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../doublecounter.srcs/sources_1/new/doublecounter.vhd" \
+"../../../../doublecounter.srcs/sources_1/new/doublecounter_tb.vhd" \
+
+# Do not sort compile order
+nosort
