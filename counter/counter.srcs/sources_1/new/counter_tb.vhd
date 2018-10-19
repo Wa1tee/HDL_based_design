@@ -84,16 +84,17 @@ begin
   begin
     report "Test begin" severity note;
 
-    --enable <= '1';
-    --reset <= '0';
---
-    --down_up <= '1';
-    --wait for 100ns;
+    down_up <= '0';
+    enable <= '1';
+    wait for 20ns;
+    enable <= '0';
+
     reset <= '1';
+    wait for 20ns;
+    reset <= '0';
     wait for 20ns;
     assert count = "0000" report "First reset not working" severity error;
 
-    reset <= '0';
     enable <= '0';
     data <= "0101";
     load <= '1';
@@ -112,18 +113,22 @@ begin
 
     down_up <= '0';
     wait for 10ns;
-    enable <= '1';
 
-    for i in 0 to 14 loop
+    enable <= '1';
+    for i in 0 to 15 loop
         assert count = std_logic_vector(to_unsigned(i,4)) report "Counting up failed" severity error;
-        wait until rising_edge(clk);
+        wait for 20ns;
     end loop;
 
     down_up <= '1';
+    data <= "1111";
+    load <= '1';
+    wait for 20ns;
+    load <= '0';
 
-    for i in 0 to 14 loop
-        assert count = std_logic_vector(to_unsigned((7-i),4)) report "Counting down failed" severity error;
-        wait until rising_edge(clk);
+    for i in 0 to 15 loop
+        assert count = std_logic_vector(to_unsigned((15-i),4)) report "Counting down failed" severity error;
+        wait for 20ns;
     end loop;
 
     for i in 0 to 15 loop
@@ -133,9 +138,8 @@ begin
       load <= '0';
       assert count = std_logic_vector(to_unsigned(i,4)) report "Loading failed" severity error;
       reset <= '1';
-      wait for 10ns;
+      wait for 20ns;
       reset <= '0';
-      assert count = "0000" report "Loading reset failed" severity error;     
     end loop;
 
     data <= "1111";
@@ -160,5 +164,6 @@ begin
 
     assert count = "1111" report "underflow count failed" severity error;
     assert over = '1' report "overflow failed" severity error;
+    report "Test finished" severity note;
   end process test;
 end tb;
