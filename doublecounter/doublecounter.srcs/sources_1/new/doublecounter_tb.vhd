@@ -87,13 +87,116 @@ begin
   end process clock;
 
   test : process
+  variable help : std_logic_vector(7 downto 0);
   begin
   	report "Test begin" severity note;
 
   	down_up <= '0';
   	enable <= '1';
-  	wait for 1000ns;
+  	wait for 20ns;
+  	enable <= '0';
+
+    reset <= '1';
+    wait for 20ns;
+    reset <= '0';
+    wait for 20ns;
+    assert count_1 = "0000" report "First reset not working for count_1" severity error;
+    assert count_0 = "0000" report "First reset not working for count_0" severity error;
+
+    enable <= '0';
+    data <= "01010101";
+    load <= '1';
+    wait for 20ns;
+    assert count_1 = "0000" report "enable 0 failed" severity error;
+    assert count_0 = "0000" report "enable 0 failed" severity error;
+
+    load <= '0';
+
+    down_up <= '0';
+    wait for 20ns;
+    assert count_1 = "0000" report "enable 0 failed" severity error;
+    assert count_0 = "0000" report "enable 0 failed" severity error;
+
+    down_up <= '1';
+    wait for 20ns;
+    assert count_1 = "0000" report "enable 0 failed" severity error;
+    assert count_0 = "0000" report "enable 0 failed" severity error;
+
+    down_up <= '0';
+    wait for 20ns;
+
+    --count up
+    enable <= '1';
+    for i in 0 to 255 loop
+        help := std_logic_vector(to_unsigned(i, 8));
+
+        assert count_0 = help(7 downto 4) report "Counting up failed" severity error;
+        
+        assert count_1 = help(3 downto 0) report "Counting up failed" severity error;
+        
+        wait for 20ns;
+    end loop;
 
 
+    down_up <= '1';
+    data <= "11111111";
+    load <= '1';
+    wait for 20ns;
+    load <= '0';
+
+    --count down
+	for i in 0 to 255 loop
+        help := std_logic_vector(to_unsigned(255 - i, 8));
+
+        assert count_0 = help(7 downto 4) report "Counting down failed" severity error;
+        
+        assert count_1 = help(3 downto 0) report "Counting down failed" severity error;
+        
+        wait for 20ns;
+    end loop;
+
+    --loading data
+    for i in 0 to 255 loop
+      data <= std_logic_vector(to_unsigned(i,8));
+      help := std_logic_vector(to_unsigned(i, 8));
+      load <= '1';
+      wait for 20ns;
+      load <= '0';
+
+      assert count_0 = help(7 downto 4) report "Data loading failed" severity error;
+      assert count_1 = help(3 downto 0) report "Data loading failed" severity error;
+      
+      reset <= '1';
+      wait for 20ns;
+      reset <= '0';
+    end loop;
+
+    --overflow test
+
+    data <= "11111111";
+    down_up <= '0';
+
+    load <= '1';
+    wait for 10ns;
+    load <= '0';
+    
+    wait for 10ns;
+    assert count_1 = "0000" report "overflow count failed" severity error;
+    assert count_0 = "0000" report "overflow count failed" severity error;
+    assert over = '1' report "overflow failed" severity error;
+
+    data <= "00000000";
+    down_up <= '1';
+
+    load <= '1';
+    wait for 10ns;
+    load <= '0';
+
+    wait for 10ns;
+    assert count_1 = "1111" report "underflow count failed" severity error;
+    assert count_0 = "1111" report "underflow count failed" severity error;
+    assert over = '1' report "underflow failed" severity error;
+
+    report "Test finished" severity note;
   end process test;
 end tb;
