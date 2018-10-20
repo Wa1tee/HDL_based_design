@@ -163,7 +163,7 @@ begin
     wait for 10ns;
 
     assert count = "1111" report "underflow count failed" severity error;
-    assert over = '1' report "overflow failed" severity error;
+    assert over = '1' report "underflow failed" severity error;
     report "Test finished" severity note;
   end process test;
 end tb;
