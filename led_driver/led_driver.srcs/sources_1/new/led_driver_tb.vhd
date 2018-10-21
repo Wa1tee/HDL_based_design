@@ -4,7 +4,7 @@
 -- 
 -- Create Date: 21.10.2018 00:03:35
 -- Design Name: 
--- Module Name: led_driver_tb - Behavioral
+-- Module Name: led_driver_tb - TB
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -32,12 +32,15 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity led_driver_tb is
---  Port ( );
 end led_driver_tb;
 
-architecture Behavioral of led_driver_tb is
-
+architecture tb of led_driver_tb is
+component timer
+		Port ( 	reset 	: in STD_LOGIC;
+    			clk		: in STD_LOGIC;
+    			timer 	: out STD_LOGIC);
+end component;
 begin
 
 
-end Behavioral;
+end tb;
