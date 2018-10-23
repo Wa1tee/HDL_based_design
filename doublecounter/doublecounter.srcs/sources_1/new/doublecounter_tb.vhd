@@ -24,13 +24,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
@@ -130,9 +123,9 @@ begin
     for i in 0 to 255 loop
         help := std_logic_vector(to_unsigned(i, 8));
 
-        assert count_0 = help(7 downto 4) report "Counting up failed" severity error;
+        assert count_0 = help(7 downto 4) report "Counting 0 up failed" severity error;
         
-        assert count_1 = help(3 downto 0) report "Counting up failed" severity error;
+        assert count_1 = help(3 downto 0) report "Counting 1 up failed " & std_logic_vector(count_1) & std_logic_vector(help(3 downto 0))  severity error;
         
         wait for 20ns;
     end loop;
@@ -148,9 +141,9 @@ begin
 	for i in 0 to 255 loop
         help := std_logic_vector(to_unsigned(255 - i, 8));
 
-        assert count_0 = help(7 downto 4) report "Counting down failed" severity error;
+        assert count_0 = help(7 downto 4) report "Counting 0 down failed" severity error;
         
-        assert count_1 = help(3 downto 0) report "Counting down failed" severity error;
+        assert count_1 = help(3 downto 0) report "Counting 1 down failed" severity error;
         
         wait for 20ns;
     end loop;
@@ -166,9 +159,7 @@ begin
       assert count_0 = help(7 downto 4) report "Data loading failed" severity error;
       assert count_1 = help(3 downto 0) report "Data loading failed" severity error;
       
-      reset <= '1';
-      wait for 20ns;
-      reset <= '0';
+     
     end loop;
 
     --overflow test

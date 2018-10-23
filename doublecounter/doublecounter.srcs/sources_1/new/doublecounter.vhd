@@ -44,21 +44,30 @@ entity doublecounter is
 end doublecounter;
 
 architecture Behavioral of doublecounter is
+signal s_count : integer;
 begin
 
+process(clk)
+	variable v_help  : std_logic_vector(7 downto 0);
+begin
+	if (rising_edge(clk)) then
+		v_help := std_logic_vector(to_unsigned(s_count, 8));
+	end if;
+	count_0 <= v_help(7 downto 4);
+	count_1 <= v_help(3 downto 0);
+	
+end process;
 
 process (clk, reset, enable, load, down_up, data)
 	variable v_count : integer := 0;
-	--variable v_over  : std_logic;
-	variable v_help  : std_logic_vector(7 downto 0);
+	variable v_over  : std_logic;
 begin
 	if (reset = '1') then
 		--resetting
-		v_count := 0;
-		count_0 <= "0000";
-    	count_1 <= "0000";
-    	over 	<= '0';
+		s_count <= 0;
+		over 	<= '0';
 	elsif(rising_edge(clk)) then
+		--v_over := '0';
 		if (enable = '1') then
 			if (load = '1') then
 				--load data
@@ -68,15 +77,15 @@ begin
 					when '0' =>
 						--counter up
 						if (v_count = 255) then
-							over <= '1';
+							v_over := '1';
 							v_count := 0;
 						else
-							v_count := v_count +1;
+							v_count := s_count +1;
 						end if;
 					when others =>
 						--counter down
 						if (v_count = 0) then
-							over <= '1';
+							v_over := '1';
 							v_count := 255;
 						else
 							v_count := v_count -1;
@@ -85,10 +94,9 @@ begin
 			end if;
 		end if;
 	end if;
+	over <= v_over;
+	s_count <= v_count;
 		
-		v_help := std_logic_vector(to_unsigned(v_count, 8));
-		count_0 <= v_help(7 downto 4);
-		count_1 <= v_help(3 downto 0);
 	
 end process;
 end Behavioral;
