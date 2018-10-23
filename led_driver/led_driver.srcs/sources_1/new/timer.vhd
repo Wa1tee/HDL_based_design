@@ -32,45 +32,23 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity timer is
-    Port ( 	reset 		: in STD_LOGIC;
-    		clk			: in STD_LOGIC;
-    		alarm		: in STD_LOGIC;
-    		speed 		: in std_logic_vector(1 downto 0)
+    Port ( 	reset 	: in STD_LOGIC;
+    		t_clk	: in STD_LOGIC;
+    		alarm	: in STD_LOGIC;
+    		speed 	: in std_logic_vector(1 downto 0),
+    		timer 	: out STD_LOGIC
     		);
     
 end timer;
 
 architecture Behavioral of timer is
-	component led_driver
-		Port (	timer 	: in STD_LOGIC; 
-    			reset 	: in STD_LOGIC;
-    	       	iter  	: in STD_LOGIC;
-    	       	--alarm 	: in STD_LOGIC;
-    	       	--speed 	: in std_logic_vector(1 downto 0);
-				
-				state	: in std_logic_vector(2 downto 0);
-				
-		        red	 	: out std_logic_vector(7 downto 0);
-		        blue 	: out std_logic_vector(7 downto 0);
-    	       	green	: out std_logic_vector(7 downto 0));
-	end component led_driver;
-
+	
 variable v_time : std_logic_vector(7 downto 0) := "00000000";
 variable v_speed : std_logic_vector(1 downto 0) := "00";
 variable v_state : std_logic_vector(2 downto 0) := "000";
 
 begin
-	DUT : led_driver
-	port map(
-		timer => timer,
-		reset => reset,
-		iter  => iter,
-		alarm => alarm,
-		state => state,
-		red	  => red,
-		blue  => blue,
-		green => green
-	);
+	
 
 	if (reset = '1') then
 		v_time := 0;
