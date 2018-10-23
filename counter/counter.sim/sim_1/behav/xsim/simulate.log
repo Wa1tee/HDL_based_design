@@ -2,3 +2,1383 @@ Vivado Simulator 2018.2
 Time resolution is 1 ps
 Note: Test begin
 Time: 0 ps  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 1420 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 1420 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 1450 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 1450 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 2870 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 2870 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 2900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 2900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 2900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 2900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 4320 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 4320 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 4350 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 4350 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 5770 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 5770 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 5800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 5800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 5800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 5800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 7220 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 7220 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 7250 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 7250 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 8670 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 8670 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 8700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 8700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 8700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 8700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 10120 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 10120 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 10150 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 10150 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 11570 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 11570 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 11600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 11600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 11600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 11600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 13020 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 13020 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 13050 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 13050 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 14470 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 14470 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 14500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 14500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 14500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 14500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 15920 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 15920 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 15950 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 15950 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 17370 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 17370 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 17400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 17400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 17400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 17400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 18820 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 18820 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 18850 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 18850 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 20270 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 20270 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 20300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 20300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 20300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 20300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 21720 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 21720 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 21750 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 21750 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 23170 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 23170 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 23200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 23200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 23200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 23200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 24620 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 24620 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 24650 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 24650 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 26070 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 26070 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 26100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 26100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 26100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 26100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 27520 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 27520 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 27550 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 27550 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 28970 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 28970 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 29 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 29 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 29 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 29 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 30420 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 30420 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 30450 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 30450 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 31870 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 31870 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 31900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 31900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 31900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 31900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 33320 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 33320 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 33350 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 33350 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 34770 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 34770 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 34800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 34800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 34800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 34800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 36220 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 36220 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 36250 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 36250 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 37670 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 37670 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 37700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 37700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 37700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 37700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 39120 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 39120 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 39150 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 39150 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 40570 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 40570 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 40600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 40600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 40600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 40600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 42020 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 42020 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 42050 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 42050 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 43470 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 43470 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 43500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 43500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 43500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 43500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 44920 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 44920 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 44950 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 44950 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 46370 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 46370 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 46400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 46400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 46400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 46400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 47820 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 47820 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 47850 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 47850 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 49270 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 49270 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 49300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 49300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 49300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 49300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 50720 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 50720 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 50750 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 50750 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 52170 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 52170 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 52200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 52200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 52200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 52200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 53620 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 53620 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 53650 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 53650 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 55070 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 55070 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 55100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 55100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 55100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 55100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 56520 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 56520 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 56550 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 56550 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 57970 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 57970 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 58 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 58 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 58 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 58 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 59420 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 59420 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 59450 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 59450 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 60870 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 60870 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 60900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 60900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 60900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 60900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 62320 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 62320 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 62350 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 62350 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 63770 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 63770 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 63800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 63800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 63800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 63800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 65220 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 65220 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 65250 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 65250 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 66670 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 66670 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 66700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 66700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 66700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 66700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 68120 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 68120 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 68150 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 68150 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 69570 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 69570 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 69600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 69600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 69600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 69600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 71020 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 71020 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 71050 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 71050 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 72470 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 72470 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 72500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 72500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 72500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 72500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 73920 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 73920 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 73950 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 73950 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 75370 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 75370 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 75400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 75400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 75400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 75400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 76820 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 76820 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 76850 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 76850 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 78270 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 78270 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 78300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 78300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 78300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 78300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 79720 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 79720 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 79750 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 79750 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 81170 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 81170 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 81200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 81200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 81200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 81200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 82620 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 82620 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 82650 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 82650 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 84070 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 84070 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 84100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 84100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 84100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 84100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 85520 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 85520 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 85550 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 85550 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 86970 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 86970 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 87 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 87 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 87 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 87 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 88420 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 88420 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 88450 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 88450 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 89870 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 89870 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 89900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 89900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 89900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 89900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 91320 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 91320 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 91350 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 91350 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 92770 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 92770 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 92800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 92800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 92800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 92800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 94220 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 94220 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 94250 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 94250 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 95670 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 95670 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 95700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 95700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 95700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 95700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 97120 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 97120 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 97150 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 97150 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 98570 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 98570 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 98600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 98600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 98600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 98600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 100020 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 100020 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 100050 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 100050 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 101470 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 101470 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 101500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 101500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 101500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 101500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 102920 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 102920 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 102950 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 102950 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 104370 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 104370 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 104400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 104400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 104400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 104400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 105820 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 105820 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 105850 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 105850 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 107270 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 107270 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 107300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 107300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 107300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 107300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 108720 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 108720 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 108750 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 108750 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 110170 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 110170 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 110200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 110200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 110200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 110200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 111620 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 111620 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 111650 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 111650 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 113070 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 113070 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 113100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 113100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 113100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 113100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 114520 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 114520 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 114550 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 114550 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 115970 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 115970 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 116 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 116 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 116 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 116 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 117420 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 117420 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 117450 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 117450 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 118870 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 118870 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 118900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 118900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 118900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 118900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 120320 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 120320 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 120350 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 120350 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 121770 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 121770 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 121800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 121800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 121800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 121800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 123220 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 123220 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 123250 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 123250 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 124670 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 124670 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 124700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 124700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 124700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 124700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 126120 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 126120 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 126150 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 126150 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 127570 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 127570 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 127600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 127600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 127600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 127600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 129020 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 129020 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 129050 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 129050 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 130470 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 130470 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 130500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 130500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 130500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 130500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 131920 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 131920 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 131950 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 131950 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 133370 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 133370 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 133400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 133400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 133400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 133400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 134820 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 134820 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 134850 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 134850 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 136270 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 136270 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 136300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 136300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 136300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 136300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 137720 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 137720 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 137750 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 137750 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 139170 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 139170 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 139200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 139200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 139200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 139200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 140620 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 140620 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 140650 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 140650 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 142070 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 142070 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 142100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 142100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 142100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 142100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 143520 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 143520 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 143550 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 143550 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 144970 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 144970 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 145 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 145 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 145 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 145 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 146420 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 146420 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 146450 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 146450 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 147870 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 147870 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 147900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 147900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 147900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 147900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 149320 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 149320 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 149350 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 149350 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 150770 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 150770 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 150800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 150800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 150800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 150800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 152220 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 152220 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 152250 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 152250 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 153670 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 153670 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 153700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 153700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 153700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 153700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 155120 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 155120 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 155150 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 155150 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 156570 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 156570 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 156600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 156600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 156600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 156600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 158020 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 158020 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 158050 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 158050 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 159470 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 159470 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 159500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 159500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 159500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 159500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 160920 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 160920 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 160950 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 160950 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 162370 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 162370 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 162400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 162400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 162400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 162400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 163820 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 163820 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 163850 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 163850 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 165270 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 165270 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 165300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 165300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 165300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 165300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 166720 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 166720 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 166750 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 166750 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 168170 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 168170 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 168200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 168200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 168200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 168200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 169620 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 169620 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 169650 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 169650 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 171070 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 171070 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 171100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 171100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 171100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 171100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 172520 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 172520 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 172550 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 172550 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 173970 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 173970 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 174 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 174 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 174 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 174 us  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 175420 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 175420 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 175450 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 175450 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 176870 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 176870 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 176900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 176900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 176900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 176900 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 178320 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 178320 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 178350 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 178350 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 179770 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 179770 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 179800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 179800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 179800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 179800 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 181220 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 181220 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 181250 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 181250 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 182670 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 182670 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 182700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 182700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 182700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 182700 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 184120 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 184120 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 184150 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 184150 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 185570 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 185570 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 185600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 185600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 185600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 185600 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 187020 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 187020 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 187050 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 187050 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 188470 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 188470 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 188500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 188500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 188500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 188500 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 189920 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 189920 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 189950 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 189950 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 191370 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 191370 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 191400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 191400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 191400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 191400 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 192820 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 192820 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 192850 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 192850 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 194270 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 194270 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 194300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 194300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 194300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 194300 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 195720 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 195720 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 195750 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 195750 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 197170 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 197170 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 197200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 197200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 197200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 197200 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 198620 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 198620 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 198650 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 198650 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow count failed
+Time: 200070 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: overflow failed
+Time: 200070 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow count failed
+Time: 200100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Error: underflow failed
+Time: 200100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test finished
+Time: 200100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd
+Note: Test begin
+Time: 200100 ns  Iteration: 0  Process: /counter_tb/test  File: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/counter/counter.srcs/sources_1/new/counter_tb.vhd

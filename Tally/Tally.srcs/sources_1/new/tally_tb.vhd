@@ -143,7 +143,7 @@ begin
 		 	for j in 0 to 7 loop
 				scoresA <= std_logic_vector(to_signed(i, 3));
 				scoresB <= std_logic_vector(to_signed(j, 3));
-				wait for 100ns;
+				wait for 1ns;
 				assert result(scoresA, scoresB) = winner report "Error" severity error;
 			end loop;
 		end loop;

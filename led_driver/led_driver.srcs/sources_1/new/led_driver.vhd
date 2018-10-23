@@ -33,12 +33,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity led_driver is
     Port (	
-    		--timer 	: in STD_LOGIC; 
+    		
     		clk		: in STD_LOGIC;
     		reset 	: in STD_LOGIC;
            	iter  	: in STD_LOGIC;
-           	--alarm 	: in STD_LOGIC;
-           	--speed 	: in std_logic_vector(1 downto 0);
+           	alarm 	: in STD_LOGIC;
+           	speed 	: in std_logic_vector(1 downto 0);
 			
 			state	: in std_logic_vector(2 downto 0);
 
@@ -51,7 +51,7 @@ end led_driver;
 architecture Behavioral of led_driver is
 	component timer
 		Port ( 	reset 	: in STD_LOGIC;
-    			clk		: in STD_LOGIC;
+    			t_clk		: in STD_LOGIC;
     			timer 	: out STD_LOGIC);
 	end component timer;
 
@@ -60,9 +60,11 @@ variable v_speed : std_logic_vector(1 downto 0) := "00";
 begin
 	DUT : timer
 	port map (
-    	clk			=> clk,
-    	speed 		=> speed,
-    	timer 		=> timer
+		reset	=> reset,
+    	t_clk	=> t_clk,
+    	speed 	=> speed,
+    	alarm 	=> alarm,
+    	timer 	=> timer
 		);
 
 	if (rising_edge(clk) and iter = '0') then

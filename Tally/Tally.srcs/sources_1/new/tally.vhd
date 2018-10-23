@@ -44,6 +44,8 @@ process (scoresA, scoresB)
 	variable v_A : integer := 0;
 	variable v_B : integer := 0;
 begin
+	v_B := 0;
+	v_A := 0;
 	for i in 0 to 2 loop
 		if (scoresA(i) = '1') then
 			v_A := v_A + 1;
