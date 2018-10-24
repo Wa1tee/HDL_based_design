@@ -24,7 +24,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -39,8 +39,6 @@ entity led_driver is
            	iter  	: in STD_LOGIC;
            	alarm 	: in STD_LOGIC;
            	speed 	: in std_logic_vector(1 downto 0);
-			
-			state	: in std_logic_vector(2 downto 0);
 
 	        red	 	: out std_logic_vector(7 downto 0);
            	green	: out std_logic_vector(7 downto 0);
@@ -50,98 +48,123 @@ end led_driver;
 
 architecture Behavioral of led_driver is
 	component timer
-		Port ( 	reset 	: in STD_LOGIC;
+		Port ( 	
     			t_clk		: in STD_LOGIC;
-    			timer 	: out STD_LOGIC);
+				t_reset 	: in STD_LOGIC;
+				t_alarm	: in STD_LOGIC;
+				t_speed : in std_logic_vector(1 downto 0);
+    			t_timer 	: out STD_LOGIC
+    	);
 	end component timer;
 
+	signal t_reset : STD_LOGIC;
+	signal t_alarm : STD_LOGIC;
+	signal t_speed : std_logic_vector(1 downto 0);
+	signal t_timer   : STD_LOGIC;
 
 begin
-	DUT : timer
+	module : timer
 	port map (
-    	clk		=> clk,
+    	t_clk		=> t_clk,
 		t_reset	=> t_reset,
     	t_alarm => t_alarm,
     	t_speed => t_speed,
-    	timer 	=> timer
+    	t_timer 	=> t_timer
 		);
-process(clk, reset, iter, alarm, speed, state)
+process(clk, reset, iter, alarm, speed)
 
 variable v_speed : std_logic_vector(1 downto 0);
-variable v_state : std_logic_vector(2 downto 0);
+variable v_state : integer;
 
 begin
+	t_clk <= clk;
+
 	if(reset = '1') then
 		t_reset <= '1';
+		v_state := 0;
+		t_speed <= "00";
 	elsif rising_edge(clk) then
 		t_reset <= '0';
-		if (rising_edge(timer) and iter = '0') then
-			v_state := v_state + std_logic_vector(to_unsigned(1, 3));
+		t_speed <= speed;
+		t_alarm <= alarm;
+
+
+		if (rising_edge(t_timer)) then
+			if (v_state = 5) then
+				v_state := 1;
+			else
+				v_state := v_state + 1;
+			end if;
+		end if;
+
+		if (iter = '0') then
+			-- default loop	
 			case(v_state) is
 				--Standby
-				when "000" => 
+				when 0 => 
 					red 	<= "11111111";
 					green 	<= "11111111";
 					blue	<= "11111111";
 	
 				--Red
-				when "001" =>
+				when 1 =>
 					red 	<= "11111111";
 					green 	<= "00000000";
 					blue	<= "00000000";
 				--Yellow
-				when "010" =>
+				when 2 =>
 					red 	<= "11111111";
 					green 	<= "11111111";
 					blue	<= "00000000";
 				--Green
-				when "011" =>
+				when 3 =>
 					red 	<= "00000000";
 					green 	<= "11111111";
 					blue	<= "00000000";
 				--Blue
-				when "100" =>
+				when 4 =>
 					red 	<= "00000000";
 					green 	<= "00000000";
 					blue	<= "11111111";
 				--Purple
-				when "101" =>
+				when 5 =>
 					red 	<= "10000000";
 					green 	<= "00000000";
 					blue	<= "10000000";
 				when others =>
 					null;
 			end case;
-		elsif (rising_edge(timer) and iter = '1') then
+		elsif(iter = '1') then
+			-- backwards loop
 			case(v_state) is
 				--Standby
-				when "000" => 
+				when 0 => 
 					red 	<= "11111111";
 					green 	<= "11111111";
 					blue	<= "11111111";
 	
 				--Red
-				when "001" =>
+				when 1 =>
 					red 	<= "11111111";
 					green 	<= "00000000";
 					blue	<= "00000000";
 				--Yellow
-				when "010" =>
+				when 2 =>
 					red 	<= "11111111";
 					green 	<= "11111111";
 					blue	<= "00000000";
 				--Purple
-				when "011" =>
+				when 3 =>
 					red 	<= "10000000";
 					green 	<= "00000000";
 					blue	<= "10000000";
 				--Blue
-				when "100" =>
+				when 4 =>
 					red 	<= "00000000";
 					green 	<= "00000000";
 					blue	<= "11111111";
 				--Green
-				when "101" =>
+				when 5 =>
 					red 	<= "00000000";
 					green 	<= "11111111";
 					blue	<= "00000000";
