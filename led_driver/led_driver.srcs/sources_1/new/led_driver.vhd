@@ -57,6 +57,7 @@ architecture Behavioral of led_driver is
     	);
 	end component timer;
 
+	signal t_clk : STD_LOGIC;
 	signal t_reset : STD_LOGIC;
 	signal t_alarm : STD_LOGIC;
 	signal t_speed : std_logic_vector(1 downto 0);
@@ -77,6 +78,7 @@ variable v_speed : std_logic_vector(1 downto 0);
 variable v_state : integer;
 
 begin
+	
 	t_clk <= clk;
 
 	if(reset = '1') then

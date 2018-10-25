@@ -117,6 +117,7 @@ begin
 	wait for 2ns;
 	reset <= '0';
 
+	speed <= "00";
 	iter <= '0';
 
 	wait for 200000ns;

@@ -45,7 +45,7 @@ end timer;
 architecture Behavioral of timer is
 begin
 
-process(t_clk, t_reset, t_alarm, t_speed, t_timer)	
+process(t_clk, t_reset, t_alarm, t_speed)	
 
 variable v_time  : integer;
 variable v_alarm : integer;
@@ -101,7 +101,7 @@ begin
 					end if;
 				
 				when others =>
-					t_timer <= 0;
+					t_timer <= '0';
 			end case;
 		end if;
 		v_time := v_time + 1;
@@ -133,7 +133,7 @@ begin
 				end if;
 			
 			when others =>
-				t_timer <= 0;
+				t_timer <= '0';
 		end case;
 	end if;
 end process;
