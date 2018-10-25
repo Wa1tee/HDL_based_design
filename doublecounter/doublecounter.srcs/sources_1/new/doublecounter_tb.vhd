@@ -74,9 +74,9 @@ begin
   clock : process
   begin
     clk <= '1';
-    wait for 10ns;
+    wait for 5ns;
     clk <= '0';
-    wait for 10ns;
+    wait for 5ns;
   end process clock;
 
   test : process
@@ -86,81 +86,80 @@ begin
 
   	down_up <= '0';
   	enable <= '1';
-  	wait for 20ns;
+  	wait for 2ns;
   	enable <= '0';
 
     reset <= '1';
-    wait for 20ns;
+    wait for 2ns;
     reset <= '0';
-    wait for 20ns;
+    wait for 2ns;
     assert count_1 = "0000" report "First reset not working for count_1" severity error;
     assert count_0 = "0000" report "First reset not working for count_0" severity error;
 
     enable <= '0';
     data <= "01010101";
     load <= '1';
-    wait for 20ns;
+    wait for 2ns;
     assert count_1 = "0000" report "enable 0 failed" severity error;
     assert count_0 = "0000" report "enable 0 failed" severity error;
 
     load <= '0';
 
     down_up <= '0';
-    wait for 20ns;
+    wait for 2ns;
     assert count_1 = "0000" report "enable 0 failed" severity error;
     assert count_0 = "0000" report "enable 0 failed" severity error;
 
     down_up <= '1';
-    wait for 20ns;
+    wait for 2ns;
     assert count_1 = "0000" report "enable 0 failed" severity error;
     assert count_0 = "0000" report "enable 0 failed" severity error;
 
     down_up <= '0';
-    wait for 20ns;
+    wait for 2ns;
 
     --count up
     enable <= '1';
     for i in 0 to 255 loop
         help := std_logic_vector(to_unsigned(i, 8));
 
-        assert count_0 = help(7 downto 4) report "Counting 0 up failed" severity error;
+        assert count_0 = help(7 downto 4) report "Counting 0 up failed at i:" & integer'image(i) severity error;
         
-        assert count_1 = help(3 downto 0) report "Counting 1 up failed " & std_logic_vector(count_1) & std_logic_vector(help(3 downto 0))  severity error;
+        assert count_1 = help(3 downto 0) report "Counting 1 up failed at i:" & integer'image(i)  severity error;
         
-        wait for 20ns;
+        wait for 10ns;
     end loop;
 
 
     down_up <= '1';
     data <= "11111111";
     load <= '1';
-    wait for 20ns;
+    wait for 2ns;
     load <= '0';
 
     --count down
 	for i in 0 to 255 loop
         help := std_logic_vector(to_unsigned(255 - i, 8));
 
-        assert count_0 = help(7 downto 4) report "Counting 0 down failed" severity error;
+        assert count_0 = help(7 downto 4) report "Counting 0 down failed at i:" & integer'image(i) severity error;
         
-        assert count_1 = help(3 downto 0) report "Counting 1 down failed" severity error;
+        assert count_1 = help(3 downto 0) report "Counting 1 down failed at i:" & integer'image(i) severity error;
         
-        wait for 20ns;
+        wait for 10ns;
     end loop;
 
     --loading data
-    for i in 0 to 255 loop
-      data <= std_logic_vector(to_unsigned(i,8));
-      help := std_logic_vector(to_unsigned(i, 8));
+    
+      data <= "01010101";
       load <= '1';
-      wait for 20ns;
+      wait for 10ns;
       load <= '0';
 
-      assert count_0 = help(7 downto 4) report "Data loading failed" severity error;
-      assert count_1 = help(3 downto 0) report "Data loading failed" severity error;
+      assert count_0 = "0101" report "Data loading failed" severity error;
+      assert count_1 = "0101" report "Data loading failed" severity error;
       
      
-    end loop;
+    
 
     --overflow test
 
@@ -168,10 +167,10 @@ begin
     down_up <= '0';
 
     load <= '1';
-    wait for 10ns;
+    wait for 1ns;
     load <= '0';
     
-    wait for 10ns;
+    wait for 1ns;
     assert count_1 = "0000" report "overflow count failed" severity error;
     assert count_0 = "0000" report "overflow count failed" severity error;
     assert over = '1' report "overflow failed" severity error;
@@ -180,10 +179,10 @@ begin
     down_up <= '1';
 
     load <= '1';
-    wait for 10ns;
+    wait for 1ns;
     load <= '0';
 
-    wait for 10ns;
+    wait for 1ns;
     assert count_1 = "1111" report "underflow count failed" severity error;
     assert count_0 = "1111" report "underflow count failed" severity error;
     assert over = '1' report "underflow failed" severity error;

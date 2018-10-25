@@ -67,12 +67,12 @@ begin
 		s_count <= 0;
 		over 	<= '0';
 	elsif(rising_edge(clk)) then
-		--v_over := '0';
+		v_over := '0';
 		if (enable = '1') then
 			if (load = '1') then
 				--load data
 				v_count := to_integer(unsigned(data));
-			else	
+			else
 				case(down_up) is
 					when '0' =>
 						--counter up
@@ -93,9 +93,9 @@ begin
 				end case;
 			end if;
 		end if;
+		over <= v_over;
+		s_count <= v_count;
 	end if;
-	over <= v_over;
-	s_count <= v_count;
 		
 	
 end process;
