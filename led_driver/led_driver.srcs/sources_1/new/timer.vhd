@@ -34,9 +34,9 @@ use IEEE.NUMERIC_STD.ALL;
 entity timer is
     Port ( 	
     		t_clk		: in STD_LOGIC;
-    		t_reset : in STD_LOGIC;
-    		t_alarm	: in STD_LOGIC;
-    		t_speed : in std_logic_vector(1 downto 0);
+    		t_reset 	: in STD_LOGIC;
+    		t_alarm		: in STD_LOGIC;
+    		t_speed 	: in std_logic_vector(1 downto 0);
     		t_timer 	: out STD_LOGIC
     		);
     
@@ -70,38 +70,50 @@ begin
 		if (v_trigger = '1' ) then
 			v_alarm := v_alarm + 1;
 
-			if (v_alarm = 700000000) then
+			if (v_alarm = 70) then
 				v_trigger := '0';
 			end if;
 
 			case(v_speed) is
 				-- 4 second standby
 				when "00" =>
-					if (v_time = 40000000) then
+					if (v_time = 4) then
 						v_time := 0;
 						t_timer <= '1';
+						
+					else
+						t_timer <= '0';
 					end if;
 				-- color per second
 				when "01" => 
-					if (v_time = 10000000) then
+					if (v_time = 1) then
 						v_time := 0;
 						t_timer <= '1';
+						
+					else
+						t_timer <= '0';
 					end if;
 				-- color per 3 seconds
 				when "10" => 
-					if (v_time = 30000000) then
+					if (v_time = 3) then
 						v_time := 0;
 						t_timer <= '1';
+						
+					else
+						t_timer <= '0';
 					end if;
 				-- color per 5 seconds
 				when "11" => 
-					if (v_time = 50000000) then
+					if (v_time = 5) then
 						v_time := 0;
 						t_timer <= '1';
+						
+					else
+						t_timer <= '0';
 					end if;
 				
 				when others =>
-					t_timer <= '0';
+					null;
 			end case;
 		end if;
 		v_time := v_time + 1;
@@ -109,31 +121,43 @@ begin
 		case(v_speed) is
 			-- 4 second standby
 			when "00" =>
-				if (v_time = 400000000) then
+				if (v_time = 40) then
 					v_time := 0;
 					t_timer <= '1';
+					
+				else
+					t_timer <= '0';
 				end if;
 			-- color per second
 			when "01" => 
-				if (v_time = 100000000) then
+				if (v_time = 10) then
 					v_time := 0;
 					t_timer <= '1';
+					
+				else
+					t_timer <= '0';
 				end if;
 			-- color per 3 seconds
 			when "10" => 
-				if (v_time = 300000000) then
+				if (v_time = 30) then
 					v_time := 0;
 					t_timer <= '1';
+					
+				else
+					t_timer <= '0';
 				end if;
 			-- color per 5 seconds
 			when "11" => 
-				if (v_time = 500000000) then
+				if (v_time = 50) then
 					v_time := 0;
 					t_timer <= '1';
+					
+				else
+					t_timer <= '0';
 				end if;
 			
 			when others =>
-				t_timer <= '0';
+				null;
 		end case;
 	end if;
 end process;
