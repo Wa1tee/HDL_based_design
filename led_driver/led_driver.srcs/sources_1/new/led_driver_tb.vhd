@@ -93,9 +93,9 @@ DUT: led_driver
 UUT: timer
 	port map (
     	t_clk		=> t_clk,
-		t_reset	=> t_reset,
-    	t_alarm => t_alarm,
-    	t_speed => t_speed,
+		t_reset		=> t_reset,
+    	t_alarm 	=> t_alarm,
+    	t_speed 	=> t_speed,
 
     	t_timer 	=> t_timer
 		);

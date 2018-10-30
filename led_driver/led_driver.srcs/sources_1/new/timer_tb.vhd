@@ -80,7 +80,7 @@ begin
 	t_reset <= '0';
 	wait for 2ns;
 
-	t_speed <= "00";
+	t_speed <= "01";
 	t_alarm <= '0';
 
 	
