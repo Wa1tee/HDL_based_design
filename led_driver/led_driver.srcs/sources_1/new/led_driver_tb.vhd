@@ -104,17 +104,17 @@ UUT: timer
 clock : process
 begin
     clk <= '1';
-    t_clk <= '1';
+    --t_clk <= '1';
     wait for 5ns;
     clk <= '0';
-    t_clk <= '0';
+    --t_clk <= '0';
     wait for 5ns;
 end process clock;
 
 timertest : process
 begin
 	reset <= '1';
-	wait for 2ns;
+	wait for 10ns;
 	reset <= '0';
 
 	speed <= "00";

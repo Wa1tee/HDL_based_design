@@ -60,13 +60,13 @@ begin
 		v_time := 0;
 		v_alarm := 0;
 		v_trigger := '0';
-		v_time := 0;
-		v_speed := "11";
 	elsif (rising_edge(t_clk)) then
+		v_speed := t_speed;
 		if(t_alarm = '1') then
 			v_alarm := 0;
 			v_trigger := '1';
 			v_time := 0;
+
 		end if;
 
 		if (v_trigger = '1' ) then

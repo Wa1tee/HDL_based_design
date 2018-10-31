@@ -67,15 +67,25 @@ begin
 	module : timer
 	port map (
     	t_clk		=> t_clk,
-		t_reset	=> t_reset,
-    	t_alarm => t_alarm,
-    	t_speed => t_speed,
+		t_reset		=> t_reset,
+    	t_alarm 	=> t_alarm,
+    	t_speed 	=> t_speed,
     	t_timer 	=> t_timer
 		);
-process(clk, reset, iter, alarm, speed)
 
-variable v_speed : std_logic_vector(1 downto 0);
-variable v_state : integer;
+--iterate : process (reset, clk)
+--begin
+--  if (reset = '1') then
+    
+--  elsif (rising_edge(clock)) then
+
+--  end if;
+--end process iterate;
+
+process(clk, reset, iter, alarm, speed, t_timer)
+
+variable v_speed : std_logic_vector(1 downto 0) := "11";
+variable v_state : integer := 0;
 
 begin
 	
@@ -85,6 +95,7 @@ begin
 		t_reset <= '1';
 		v_state := 0;
 		t_speed <= "11";
+		report "reset" severity note;
 	elsif rising_edge(clk) then
 		t_reset <= '0';
 		v_speed := speed;
@@ -102,7 +113,7 @@ begin
 				v_state := 1;
 			elsif (v_state = 0) then
 				v_state := v_state + 1;
-				t_speed <= v_speed;
+				--t_speed <= v_speed;
 			else
 				v_state := v_state + 1;
 			end if;
