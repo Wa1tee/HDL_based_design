@@ -84,16 +84,25 @@ begin
 	if(reset = '1') then
 		t_reset <= '1';
 		v_state := 0;
-		t_speed <= "00";
+		t_speed <= "11";
 	elsif rising_edge(clk) then
 		t_reset <= '0';
-		t_speed <= speed;
+		v_speed := speed;
 		t_alarm <= alarm;
+
+		if (v_state = 0) then
+			t_speed <= "11";
+		else
+			t_speed <= speed;
+		end if;
 
 
 		if (rising_edge(t_timer)) then
 			if (v_state = 5) then
 				v_state := 1;
+			elsif (v_state = 0) then
+				v_state := v_state + 1;
+				t_speed <= v_speed;
 			else
 				v_state := v_state + 1;
 			end if;
