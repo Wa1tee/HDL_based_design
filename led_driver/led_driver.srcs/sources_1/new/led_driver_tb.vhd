@@ -104,10 +104,10 @@ UUT: timer
 clock : process
 begin
     clk <= '1';
-    --t_clk <= '1';
+    t_clk <= '1';
     wait for 5ns;
     clk <= '0';
-    --t_clk <= '0';
+    t_clk <= '0';
     wait for 5ns;
 end process clock;
 
@@ -120,6 +120,6 @@ begin
 	speed <= "00";
 	iter <= '0';
 
-	wait for 200000ns;
+	wait for 20000ms;
 end process timertest;
 end tb;

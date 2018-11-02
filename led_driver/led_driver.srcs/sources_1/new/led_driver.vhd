@@ -51,8 +51,8 @@ architecture Behavioral of led_driver is
 		Port ( 	
     			t_clk		: in STD_LOGIC;
 				t_reset 	: in STD_LOGIC;
-				t_alarm	: in STD_LOGIC;
-				t_speed : in std_logic_vector(1 downto 0);
+				t_alarm		: in STD_LOGIC;
+				t_speed 	: in std_logic_vector(1 downto 0);
     			t_timer 	: out STD_LOGIC
     	);
 	end component timer;
@@ -82,118 +82,24 @@ begin
 --  end if;
 --end process iterate;
 
-process(clk, reset, iter, alarm, speed, t_timer)
-
-variable v_speed : std_logic_vector(1 downto 0) := "11";
+main : process (clk, reset, iter, alarm, speed)
 variable v_state : integer := 0;
-
 begin
-	
 	t_clk <= clk;
+	t_reset <= reset;
 
-	if(reset = '1') then
-		t_reset <= '1';
-		v_state := 0;
-		t_speed <= "11";
-		report "reset" severity note;
-	elsif rising_edge(clk) then
-		t_reset <= '0';
-		v_speed := speed;
-		t_alarm <= alarm;
-
-		if (v_state = 0) then
-			t_speed <= "11";
-		else
-			t_speed <= speed;
-		end if;
-
-
-		if (rising_edge(t_timer)) then
-			if (v_state = 5) then
-				v_state := 1;
-			elsif (v_state = 0) then
-				v_state := v_state + 1;
-				--t_speed <= v_speed;
-			else
-				v_state := v_state + 1;
-			end if;
-		end if;
-
-		if (iter = '0') then
-			-- default loop	
-			case(v_state) is
-				--Standby
-				when 0 => 
-					red 	<= "11111111";
-					green 	<= "11111111";
-					blue	<= "11111111";
-	
-				--Red
-				when 1 =>
-					red 	<= "11111111";
-					green 	<= "00000000";
-					blue	<= "00000000";
-				--Yellow
-				when 2 =>
-					red 	<= "11111111";
-					green 	<= "11111111";
-					blue	<= "00000000";
-				--Green
-				when 3 =>
-					red 	<= "00000000";
-					green 	<= "11111111";
-					blue	<= "00000000";
-				--Blue
-				when 4 =>
-					red 	<= "00000000";
-					green 	<= "00000000";
-					blue	<= "11111111";
-				--Purple
-				when 5 =>
-					red 	<= "10000000";
-					green 	<= "00000000";
-					blue	<= "10000000";
-				when others =>
-					null;
-			end case;
-		elsif(iter = '1') then
-			-- backwards loop
-			case(v_state) is
-				--Standby
-				when 0 => 
-					red 	<= "11111111";
-					green 	<= "11111111";
-					blue	<= "11111111";
-	
-				--Red
-				when 1 =>
-					red 	<= "11111111";
-					green 	<= "00000000";
-					blue	<= "00000000";
-				--Yellow
-				when 2 =>
-					red 	<= "11111111";
-					green 	<= "11111111";
-					blue	<= "00000000";
-				--Purple
-				when 3 =>
-					red 	<= "10000000";
-					green 	<= "00000000";
-					blue	<= "10000000";
-				--Blue
-				when 4 =>
-					red 	<= "00000000";
-					green 	<= "00000000";
-					blue	<= "11111111";
-				--Green
-				when 5 =>
-					red 	<= "00000000";
-					green 	<= "11111111";
-					blue	<= "00000000";
-				when others =>
-					null;
-			end case;
-		end if;
-	end if;
-end process;
+  if (reset = '1') then
+  	red <= "11111111";
+  elsif (rising_edge(t_timer)) then
+  	
+  		if (v_state = 1) then
+  			v_state := 0;
+  			red <= "00000000";
+  		else
+  			v_state := 0;
+  			red <= "11111111";
+  		end if;
+  	
+  end if;
+end process main;
 end Behavioral;

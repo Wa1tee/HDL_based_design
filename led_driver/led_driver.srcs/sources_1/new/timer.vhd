@@ -51,6 +51,8 @@ variable v_time  : integer;
 variable v_alarm : integer;
 variable v_trigger : STD_LOGIC;
 variable v_speed : std_logic_vector(1 downto 0) := "00";
+variable v_out : STD_LOGIC := '0';
+
 
 
 begin
@@ -61,106 +63,18 @@ begin
 		v_alarm := 0;
 		v_trigger := '0';
 	elsif (rising_edge(t_clk)) then
-		v_speed := t_speed;
-		if(t_alarm = '1') then
-			v_alarm := 0;
-			v_trigger := '1';
-			v_time := 0;
+		if (v_time = 5) then
+			v_out := '1';
+			--v_time := 0;
+			v_time := v_time + 1;
 
+		elsif (v_time = 10) then
+			v_out := '0';
+			v_time := v_time + 1;
+		else
+			v_time := v_time + 1;
 		end if;
-
-		if (v_trigger = '1' ) then
-			v_alarm := v_alarm + 1;
-
-			if (v_alarm = 70) then
-				v_trigger := '0';
-			end if;
-
-			case(v_speed) is
-				-- color per second
-				when "00" => 
-					if (v_time = 1) then
-						v_time := 0;
-						t_timer <= '1';
-						
-					else
-						t_timer <= '0';
-					end if;
-				-- color per 3 seconds
-				when "01" => 
-					if (v_time = 3) then
-						v_time := 0;
-						t_timer <= '1';
-						
-					else
-						t_timer <= '0';
-					end if;
-				-- color per 5 seconds
-				when "10" => 
-					if (v_time = 5) then
-						v_time := 0;
-						t_timer <= '1';
-						
-					else
-						t_timer <= '0';
-					end if;
-				-- 4 second standby
-				when "11" =>
-					if (v_time = 4) then
-						v_time := 0;
-						t_timer <= '1';
-						
-					else
-						t_timer <= '0';
-					end if;
-				
-				when others =>
-					null;
-			end case;
-		end if;
-		v_time := v_time + 1;
-		--t_timer <= '0';
-		case(v_speed) is
-			-- 4 second standby
-			when "00" =>
-				if (v_time = 40) then
-					v_time := 0;
-					t_timer <= '1';
-					
-				else
-					t_timer <= '0';
-				end if;
-			-- color per second
-			when "01" => 
-				if (v_time = 10) then
-					v_time := 0;
-					t_timer <= '1';
-					
-				else
-					t_timer <= '0';
-				end if;
-			-- color per 3 seconds
-			when "10" => 
-				if (v_time = 30) then
-					v_time := 0;
-					t_timer <= '1';
-					
-				else
-					t_timer <= '0';
-				end if;
-			-- color per 5 seconds
-			when "11" => 
-				if (v_time = 50) then
-					v_time := 0;
-					t_timer <= '1';
-					
-				else
-					t_timer <= '0';
-				end if;
-			
-			when others =>
-				null;
-		end case;
 	end if;
+	t_timer <= v_out;
 end process;
 end Behavioral;
