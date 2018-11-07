@@ -79,22 +79,31 @@ begin
 		
 		v_trigger := '0';
 	elsif (rising_edge(t_clk)) then
-		v_time := v_time +1;
+		--v_time := v_time +1;
 
 		--standby state
 		if (v_standby = '1') then
 			if (v_time = 4) then
 				v_standby := '0';
-				v_time := v_time + 1;
+				v_time := 0;
 				v_out := '1';
+
 			else
 				v_time := v_time + 1;
 				v_out := '0';
 			end if;
+		else
+			if (v_time = v_speed) then
+				v_time := 0;
+				v_out := '1';
+			else
+				v_time := v_time +1;
+				v_out := '0';
+			end if;
 		end if;
 
-		
+		t_timer <= v_out;
+
 	end if;
-	t_timer <= v_out;
 end process;
 end Behavioral;

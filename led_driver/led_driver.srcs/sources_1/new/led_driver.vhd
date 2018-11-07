@@ -102,26 +102,32 @@ begin
   elsif (rising_edge(t_timer)) then
 	v_state := v_state +1;
 
+
 	if (v_state = 1) then
 		red 	<= "11111111";
 		green 	<= "00000000";
 		blue	<= "00000000";
+		report "state change" severity note;
 	elsif (v_state = 2) then
 		red 	<= "11111111";
 		green 	<= "00000000";
 		blue	<= "00000000";
+		report "state change" severity note;
 	elsif (v_state = 3) then
 		red 	<= "00000000";
 		green 	<= "11111111";
 		blue	<= "00000000";
+		report "state change" severity note;
 	elsif (v_state = 4) then
 		red 	<= "00000000";
 		green 	<= "00000000";
 		blue	<= "11111111";
+		report "state change" severity note;
 	elsif (v_state = 5) then
 		red 	<= "10000000";
 		green 	<= "00000000";
 		blue	<= "10000000";	
+		report "state change" severity note;
 	end if;
 	
 

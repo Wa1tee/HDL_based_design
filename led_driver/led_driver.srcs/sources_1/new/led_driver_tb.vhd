@@ -102,6 +102,6 @@ begin
 	--wait for 400ms;
 	--speed <= "10";
 
-	wait for 40000ms;
+	wait for 4000ms;
 end process timertest;
 end tb;
