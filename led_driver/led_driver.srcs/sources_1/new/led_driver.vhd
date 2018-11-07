@@ -82,24 +82,92 @@ begin
 --  end if;
 --end process iterate;
 
-main : process (clk, reset, iter, alarm, speed)
+main : process (clk, reset, iter, alarm, speed, t_timer)
 variable v_state : integer := 0;
 begin
-	t_clk <= clk;
+	t_clk 	<= clk;
 	t_reset <= reset;
+	t_alarm <= alarm;
+	t_speed <= speed;
 
   if (reset = '1') then
-  	red <= "11111111";
+	v_state := 0;
+
+	--standby
+	red 	<= "11111111";
+	green 	<= "11111111";
+	blue 	<= "11111111";
+	
+	report "reset" severity note;
   elsif (rising_edge(t_timer)) then
-  	
-  		if (v_state = 1) then
-  			v_state := 0;
-  			red <= "00000000";
-  		else
-  			v_state := 0;
-  			red <= "11111111";
-  		end if;
-  	
+	v_state := v_state +1;
+
+	if (v_state = 1) then
+		red 	<= "11111111";
+		green 	<= "00000000";
+		blue	<= "00000000";
+	elsif (v_state = 2) then
+		red 	<= "11111111";
+		green 	<= "00000000";
+		blue	<= "00000000";
+	elsif (v_state = 3) then
+		red 	<= "00000000";
+		green 	<= "11111111";
+		blue	<= "00000000";
+	elsif (v_state = 4) then
+		red 	<= "00000000";
+		green 	<= "00000000";
+		blue	<= "11111111";
+	elsif (v_state = 5) then
+		red 	<= "10000000";
+		green 	<= "00000000";
+		blue	<= "10000000";	
+	end if;
+	
+
+  	--if (v_state = 1) then
+  	--	v_state := 0;
+  	--	red <= "00000000";
+  	--else
+  	--	v_state := 1;
+  	--	red <= "11111111";
+  	--end if;
   end if;
+
+ -- case(v_state) is
+	--	--Standby
+	--	when 0 => 
+	--		red 	<= "11111111";
+	--		green 	<= "11111111";
+	--		blue	<= "11111111";
+	--	--Red
+	--	when 1 =>
+	--		red 	<= "11111111";
+	--		green 	<= "00000000";
+	--		blue	<= "00000000";
+	--	--Yellow
+	--	when 2 =>
+	--		red 	<= "11111111";
+	--		green 	<= "11111111";
+	--		blue	<= "00000000";
+	--	--Green
+	--	when 3 =>
+	--		red 	<= "00000000";
+	--		green 	<= "11111111";
+	--		blue	<= "00000000";
+	--	--Blue
+	--	when 4 =>
+	--		red 	<= "00000000";
+	--		green 	<= "00000000";
+	--		blue	<= "11111111";
+	--	--Purple
+	--	when 5 =>
+	--		red 	<= "10000000";
+	--		green 	<= "00000000";
+	--		blue	<= "10000000";
+	--	when others =>
+	--		v_state := 1;
+			
+	--end case;
 end process main;
 end Behavioral;

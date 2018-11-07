@@ -47,33 +47,53 @@ begin
 
 process(t_clk, t_reset, t_alarm, t_speed)	
 
-variable v_time  : integer;
-variable v_alarm : integer;
+variable v_time  : integer := 0;
+variable v_alarm : integer := 0;
 variable v_trigger : STD_LOGIC;
-variable v_speed : std_logic_vector(1 downto 0) := "00";
+variable v_speed : integer := 1;
 variable v_out : STD_LOGIC := '0';
+variable v_standby : STD_LOGIC := '0';
 
 
 
 begin
+	if (t_speed = "00") then
+		--1s
+		v_speed := 1;
+	elsif (t_speed = "01") then
+		--3s
+		v_speed := 3;
+	elsif (t_speed = "10") then
+		--5s
+		v_speed := 5;	
+		
+	end if;
 
+	if (t_alarm = '1') then
+		report "Timer alarm triggered" severity note;
+	end if;
 
 	if (t_reset = '1') then
 		v_time := 0;
-		v_alarm := 0;
+		v_standby := '1';
+		
 		v_trigger := '0';
 	elsif (rising_edge(t_clk)) then
-		if (v_time = 5) then
-			v_out := '1';
-			--v_time := 0;
-			v_time := v_time + 1;
+		v_time := v_time +1;
 
-		elsif (v_time = 10) then
-			v_out := '0';
-			v_time := v_time + 1;
-		else
-			v_time := v_time + 1;
+		--standby state
+		if (v_standby = '1') then
+			if (v_time = 4) then
+				v_standby := '0';
+				v_time := v_time + 1;
+				v_out := '1';
+			else
+				v_time := v_time + 1;
+				v_out := '0';
+			end if;
 		end if;
+
+		
 	end if;
 	t_timer <= v_out;
 end process;

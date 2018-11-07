@@ -83,9 +83,9 @@ DUT: led_driver
 clock : process
 begin
     clk <= '1';
-    wait for 5ns;
+    wait for 5ms;
     clk <= '0';
-    wait for 5ns;
+    wait for 5ms;
 end process clock;
 
 timertest : process
@@ -96,7 +96,12 @@ begin
 
 	speed <= "00";
 	iter <= '0';
+	--wait for 400ms;
+	--speed <= "01";
 
-	wait for 20000ms;
+	--wait for 400ms;
+	--speed <= "10";
+
+	wait for 40000ms;
 end process timertest;
 end tb;
