@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Thu Nov  1 13:48:05 2018
-# Process ID: 11356
+# Start of session at: Tue Nov  6 14:35:34 2018
+# Process ID: 4432
 # Current directory: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_driver/led_driver.runs/synth_1
 # Command line: vivado.exe -log led_driver_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source led_driver_tb.tcl
 # Log file: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_driver/led_driver.runs/synth_1/led_driver_tb.vds
