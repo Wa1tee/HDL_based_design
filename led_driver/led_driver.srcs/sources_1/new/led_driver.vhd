@@ -42,7 +42,8 @@ entity led_driver is
 
 	        red	 	: out std_logic_vector(7 downto 0);
            	green	: out std_logic_vector(7 downto 0);
-	        blue 	: out std_logic_vector(7 downto 0));
+	        blue 	: out std_logic_vector(7 downto 0);
+    		test_out : out integer);
     
 end led_driver;
 
@@ -83,97 +84,109 @@ begin
 --end process iterate;
 
 main : process (clk, reset, iter, alarm, speed, t_timer)
-variable v_state : integer := 0;
+variable v_state 	: integer := 0;
+variable v_alarm	: STD_LOGIC := '0';
 begin
 	t_clk 	<= clk;
 	t_reset <= reset;
 	t_alarm <= alarm;
 	t_speed <= speed;
 
-  if (reset = '1') then
-	v_state := 0;
-
-	--standby
-	red 	<= "11111111";
-	green 	<= "11111111";
-	blue 	<= "11111111";
-	
-	report "reset" severity note;
-  elsif (rising_edge(t_timer)) then
-	v_state := v_state +1;
-
-
-	if (v_state = 1) then
-		red 	<= "11111111";
-		green 	<= "00000000";
-		blue	<= "00000000";
-		report "state change" severity note;
-	elsif (v_state = 2) then
-		red 	<= "11111111";
-		green 	<= "00000000";
-		blue	<= "00000000";
-		report "state change" severity note;
-	elsif (v_state = 3) then
-		red 	<= "00000000";
-		green 	<= "11111111";
-		blue	<= "00000000";
-		report "state change" severity note;
-	elsif (v_state = 4) then
-		red 	<= "00000000";
-		green 	<= "00000000";
-		blue	<= "11111111";
-		report "state change" severity note;
-	elsif (v_state = 5) then
-		red 	<= "10000000";
-		green 	<= "00000000";
-		blue	<= "10000000";	
-		report "state change" severity note;
+	if (alarm = '1') then
+		v_alarm := '1';
 	end if;
+
+  	if (reset = '1') then
+		v_state := 0;
 	
+		--standby
+		red 	<= "11111111";
+		green 	<= "11111111";
+		blue 	<= "11111111";
+		test_out <= 0;
+	
+		report "reset" severity note;
+  	
+  	elsif (rising_edge(t_timer)) then
+	v_state := v_state +1;
+	if (v_alarm = '1') then
+		if (v_state = 0) then
+			red 	<= "11111111";
+			green 	<= "11111111";
+			blue 	<= "11111111";
+			test_out <= 0;
+		else 
+			red 	<= "00000000";
+			green 	<= "00000000";
+			blue 	<= "00000000";
+			test_out <= 1;
+		end if;
+	else	
+		if (v_state = 6) then
+			v_state := 1;
+		end if;
 
-  	--if (v_state = 1) then
-  	--	v_state := 0;
-  	--	red <= "00000000";
-  	--else
-  	--	v_state := 1;
-  	--	red <= "11111111";
-  	--end if;
-  end if;
-
- -- case(v_state) is
-	--	--Standby
-	--	when 0 => 
-	--		red 	<= "11111111";
-	--		green 	<= "11111111";
-	--		blue	<= "11111111";
-	--	--Red
-	--	when 1 =>
-	--		red 	<= "11111111";
-	--		green 	<= "00000000";
-	--		blue	<= "00000000";
-	--	--Yellow
-	--	when 2 =>
-	--		red 	<= "11111111";
-	--		green 	<= "11111111";
-	--		blue	<= "00000000";
-	--	--Green
-	--	when 3 =>
-	--		red 	<= "00000000";
-	--		green 	<= "11111111";
-	--		blue	<= "00000000";
-	--	--Blue
-	--	when 4 =>
-	--		red 	<= "00000000";
-	--		green 	<= "00000000";
-	--		blue	<= "11111111";
-	--	--Purple
-	--	when 5 =>
-	--		red 	<= "10000000";
-	--		green 	<= "00000000";
-	--		blue	<= "10000000";
-	--	when others =>
-	--		v_state := 1;
+		if (iter = '0') then
 			
-	--end case;
+			if (v_state = 1) then
+				red 	<= "11111111";
+				green 	<= "00000000";
+				blue	<= "00000000";
+				test_out <= 1;
+			elsif (v_state = 2) then
+				red 	<= "11111111";
+				green 	<= "00000000";
+				blue	<= "00000000";
+				test_out <= 2;
+			elsif (v_state = 3) then
+				red 	<= "00000000";
+				green 	<= "11111111";
+				blue	<= "00000000";
+				test_out <= 3;
+			elsif (v_state = 4) then
+				red 	<= "00000000";
+				green 	<= "00000000";
+				blue	<= "11111111";
+				test_out <= 4;
+			elsif (v_state = 5) then
+				red 	<= "10000000";
+				green 	<= "00000000";
+				blue	<= "10000000";	
+				test_out <= 5;
+			end if;
+		else
+			if (v_state = 1) then
+				red 	<= "11111111";
+				green 	<= "00000000";
+				blue	<= "00000000";
+				test_out <= 1;
+			--Yellow
+			elsif (v_state = 2) then
+				red 	<= "11111111";
+				green 	<= "11111111";
+				blue	<= "00000000";
+				test_out <= 2;
+			--Purple
+			elsif (v_state = 3) then
+				red 	<= "10000000";
+				green 	<= "00000000";
+				blue	<= "10000000";
+				test_out <= 3;
+			--Blue
+			elsif (v_state = 4) then
+				red 	<= "00000000";
+				green 	<= "00000000";
+				blue	<= "11111111";
+				test_out <= 4;
+			--Green
+			elsif (v_state = 5) then
+				red 	<= "00000000";
+				green 	<= "11111111";
+				blue	<= "00000000";
+				test_out <= 5;
+			end if;
+		end if;
+	end if;
+  end if;
 end process main;
 end Behavioral;

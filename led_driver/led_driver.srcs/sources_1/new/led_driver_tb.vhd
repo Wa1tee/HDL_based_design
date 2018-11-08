@@ -45,7 +45,8 @@ component led_driver
 
 	        red	 	: out std_logic_vector(7 downto 0);
            	green	: out std_logic_vector(7 downto 0);
-	        blue 	: out std_logic_vector(7 downto 0));
+	        blue 	: out std_logic_vector(7 downto 0);
+    		test_out : out integer);
 end component;
 
 
@@ -59,6 +60,7 @@ signal speed 	: std_logic_vector(1 downto 0);
 signal red	 	: std_logic_vector(7 downto 0);
 signal green	: std_logic_vector(7 downto 0);
 signal blue 	: std_logic_vector(7 downto 0);
+signal test_out : integer;
 
 
 
@@ -74,7 +76,8 @@ DUT: led_driver
 
 		red 	=> red,
 		green 	=> green,
-		blue 	=> blue
+		blue 	=> blue,
+		test_out => test_out
 	);
 
 
@@ -83,9 +86,9 @@ DUT: led_driver
 clock : process
 begin
     clk <= '1';
-    wait for 5ms;
+    wait for 50ms;
     clk <= '0';
-    wait for 5ms;
+    wait for 50ms;
 end process clock;
 
 timertest : process
@@ -102,6 +105,12 @@ begin
 	--wait for 400ms;
 	--speed <= "10";
 
-	wait for 4000ms;
+	wait for 400ms;
+
+	alarm <= '1';
+	wait for 10ms;
+	alarm <= '0';
+	wait for 2000ms;
+
 end process timertest;
 end tb;

@@ -49,16 +49,16 @@ extern void execute_14(char*, char *);
 extern void execute_12(char*, char *);
 extern void execute_11(char*, char *);
 extern void vhdl_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
-extern void transaction_8(char*, char*, unsigned, unsigned, unsigned);
-extern void transaction_12(char*, char*, unsigned, unsigned, unsigned);
-funcp funcTab[7] = {(funcp)execute_13, (funcp)execute_14, (funcp)execute_12, (funcp)execute_11, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_8, (funcp)transaction_12};
+extern void transaction_9(char*, char*, unsigned, unsigned, unsigned);
+extern void transaction_13(char*, char*, unsigned, unsigned, unsigned);
+funcp funcTab[7] = {(funcp)execute_13, (funcp)execute_14, (funcp)execute_12, (funcp)execute_11, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_9, (funcp)transaction_13};
 const int NumRelocateId= 7;
 
 void relocate(char *dp)
 {
 	iki_relocate(dp, "xsim.dir/led_driver_tb_behav/xsim.reloc",  (void **)funcTab, 7);
-	iki_vhdl_file_variable_register(dp + 4368);
-	iki_vhdl_file_variable_register(dp + 4424);
+	iki_vhdl_file_variable_register(dp + 4632);
+	iki_vhdl_file_variable_register(dp + 4688);
 
 
 	/*Populate the transaction function pointer field in the whole net structure */
