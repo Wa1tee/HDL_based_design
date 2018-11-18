@@ -99,10 +99,10 @@ begin
 
 	speed <= "00";
 	iter <= '0';
-	--wait for 400ms;
+	wait for 400ms;
 	--speed <= "01";
 
-	--wait for 400ms;
+	wait for 400ms;
 	--speed <= "10";
 
 	wait for 400ms;

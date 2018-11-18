@@ -54,15 +54,18 @@ architecture Behavioral of led_driver is
 				t_reset 	: in STD_LOGIC;
 				t_alarm		: in STD_LOGIC;
 				t_speed 	: in std_logic_vector(1 downto 0);
-    			t_timer 	: out STD_LOGIC
+    			t_timer 	: out STD_LOGIC;
+    			t_state		: out std_logic_vector(3 downto 0)
+
     	);
 	end component timer;
 
-	signal t_clk : STD_LOGIC;
+	signal t_clk   : STD_LOGIC;
 	signal t_reset : STD_LOGIC;
 	signal t_alarm : STD_LOGIC;
 	signal t_speed : std_logic_vector(1 downto 0);
-	signal t_timer   : STD_LOGIC;
+	signal t_timer : STD_LOGIC;
+	signal t_state : std_logic_vector (2 downto 0);
 
 begin
 	module : timer
@@ -71,33 +74,28 @@ begin
 		t_reset		=> t_reset,
     	t_alarm 	=> t_alarm,
     	t_speed 	=> t_speed,
-    	t_timer 	=> t_timer
+    	t_timer 	=> t_timer,
+    	t_state		=> t_state
 		);
 
---iterate : process (reset, clk)
---begin
---  if (reset = '1') then
-    
---  elsif (rising_edge(clock)) then
 
---  end if;
---end process iterate;
 
-main : process (clk, reset, iter, alarm, speed, t_timer)
-variable v_state 	: integer := 0;
+main : process (clk, reset, iter, alarm, speed, t_timer, t_state)
+variable v_state 	: std_logic_vector (2 downto 0) := "000";
 variable v_alarm	: STD_LOGIC := '0';
 begin
 	t_clk 	<= clk;
 	t_reset <= reset;
 	t_alarm <= alarm;
 	t_speed <= speed;
+	v_state <= t_state;
 
 	if (alarm = '1') then
 		v_alarm := '1';
 	end if;
 
   	if (reset = '1') then
-		v_state := 0;
+		--v_state := 0;
 	
 		--standby
 		red 	<= "11111111";
@@ -107,79 +105,78 @@ begin
 	
 		report "reset" severity note;
   	
-  	elsif (rising_edge(t_timer)) then
-	v_state := v_state +1;
+  	elsif (rising_edge(clk)) then
 	if (v_alarm = '1') then
-		if (v_state = 0) then
+		if (v_state = "000") then
 			red 	<= "11111111";
 			green 	<= "11111111";
 			blue 	<= "11111111";
 			test_out <= 0;
+			
 		else 
 			red 	<= "00000000";
 			green 	<= "00000000";
 			blue 	<= "00000000";
 			test_out <= 1;
+			
 		end if;
-	else	
-		if (v_state = 6) then
-			v_state := 1;
-		end if;
-
+	else
+		
+		
 		if (iter = '0') then
 			
-			if (v_state = 1) then
+			if (v_state = "001") then
 				red 	<= "11111111";
 				green 	<= "00000000";
 				blue	<= "00000000";
 				test_out <= 1;
-			elsif (v_state = 2) then
+			elsif (v_state = "010") then
 				red 	<= "11111111";
-				green 	<= "00000000";
+				green 	<= "11111111";
 				blue	<= "00000000";
 				test_out <= 2;
-			elsif (v_state = 3) then
+			elsif (v_state = "011") then
 				red 	<= "00000000";
 				green 	<= "11111111";
 				blue	<= "00000000";
 				test_out <= 3;
-			elsif (v_state = 4) then
+			elsif (v_state = "100") then
 				red 	<= "00000000";
 				green 	<= "00000000";
 				blue	<= "11111111";
 				test_out <= 4;
-			elsif (v_state = 5) then
+			elsif (v_state = "101") then
 				red 	<= "10000000";
 				green 	<= "00000000";
 				blue	<= "10000000";	
 				test_out <= 5;
 			end if;
 		else
-			if (v_state = 1) then
+			if (v_state = "001") then
 				red 	<= "11111111";
 				green 	<= "00000000";
 				blue	<= "00000000";
 				test_out <= 1;
 			--Yellow
-			elsif (v_state = 2) then
+			elsif (v_state = "010") then
 				red 	<= "11111111";
 				green 	<= "11111111";
 				blue	<= "00000000";
 				test_out <= 2;
 			--Purple
-			elsif (v_state = 3) then
+			elsif (v_state = "011") then
 				red 	<= "10000000";
 				green 	<= "00000000";
 				blue	<= "10000000";
 				test_out <= 3;
 			--Blue
-			elsif (v_state = 4) then
+			elsif (v_state = "100") then
 				red 	<= "00000000";
 				green 	<= "00000000";
 				blue	<= "11111111";
 				test_out <= 4;
 			--Green
-			elsif (v_state = 5) then
+			elsif (v_state = "101") then
 				red 	<= "00000000";
 				green 	<= "11111111";
 				blue	<= "00000000";

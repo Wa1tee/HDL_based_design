@@ -3,8 +3,6 @@
   <File Type="PA-TCL" Name="led_driver_tb.tcl"/>
   <File Type="REPORTS-TCL" Name="led_driver_tb_reports.tcl"/>
   <File Type="RDS-RDS" Name="led_driver_tb.vds"/>
-  <File Type="RDS-UTIL" Name="led_driver_tb_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="led_driver_tb_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="led_driver_tb.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

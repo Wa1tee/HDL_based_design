@@ -37,7 +37,8 @@ entity timer is
     		t_reset 	: in STD_LOGIC;
     		t_alarm		: in STD_LOGIC;
     		t_speed 	: in std_logic_vector(1 downto 0);
-    		t_timer 	: out STD_LOGIC
+    		t_timer 	: out STD_LOGIC;
+    		t_state		: out std_logic_vector(2 downto 0)
 
     		);
     
