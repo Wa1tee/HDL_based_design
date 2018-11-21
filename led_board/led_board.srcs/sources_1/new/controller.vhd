@@ -65,7 +65,16 @@ begin
       t_timer => t_timer
     );
 
-	driver : process (reset, clock, alarm, speed, iter, t_timer)
+  state : process (reset, t_timer)
+  begin
+    if (reset = '1') then
+      
+    elsif (rising_edge(t_timer)) then
+      
+    end if;
+  end process state;
+
+	driver : process (reset, clock, alarm, speed, iter)
 	begin
     clock => t_clock;
 	  if (reset = '1') then

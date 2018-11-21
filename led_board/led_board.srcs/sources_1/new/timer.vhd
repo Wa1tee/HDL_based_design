@@ -31,6 +31,9 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
+--TODO: Laskuri 125 000 000 syklin laskemiseen
+
+
 entity timer is
     Port ( 	
     		t_reset : in STD_LOGIC;
