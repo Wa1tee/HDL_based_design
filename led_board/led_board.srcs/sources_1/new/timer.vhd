@@ -24,7 +24,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -39,14 +39,21 @@ entity timer is
 end timer;
 
 architecture Behavioral of timer is
-	
 begin
 	timing : process (t_reset, t_clock)
+	variable v_time : integer := 0;
 	begin
 	  if (t_reset = '1') then
-	  	
+	  	v_time := 0;
+	  	t_timer <= '0';
 	  elsif (rising_edge(t_clock)) then
-	
+		v_time := v_time + 1;
+	  	if (v_time = 10) then
+	  		t_timer <= '1';
+	  		v_time := 0;
+	  	else
+	  		t_timer <= '0';
+	  	end if;
 	  end if;
 	end process timing;
 

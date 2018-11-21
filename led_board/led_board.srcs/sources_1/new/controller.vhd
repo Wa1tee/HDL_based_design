@@ -57,7 +57,7 @@ architecture Behavioral of controller is
 
 
 begin
-  
+
   module : timer
   Port map (
       t_reset => t_reset,
@@ -67,6 +67,7 @@ begin
 
 	driver : process (reset, clock, alarm, speed, iter, t_timer)
 	begin
+    clock => t_clock;
 	  if (reset = '1') then
 	    
 	  elsif (rising_edge(clock)) then
