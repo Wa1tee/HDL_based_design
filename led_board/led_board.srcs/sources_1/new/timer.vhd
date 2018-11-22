@@ -42,18 +42,21 @@ entity timer is
 end timer;
 
 architecture Behavioral of timer is
+    signal s_time   : unsigned(23 downto 0) := "000000000000000000000000";
+    signal prescale : unsigned(23 downto 0) := "101111101011110000100000";
+
 begin
 	timing : process (t_reset, t_clock)
-	variable v_time : integer := 0;
+	--variable v_time : integer := 0;
 	begin
 	  if (t_reset = '1') then
-	  	v_time := 0;
+	  	s_time <= "000000000000000000000000";
 	  	t_timer <= '0';
 	  elsif (rising_edge(t_clock)) then
-		v_time := v_time + 1;
-	  	if (v_time = 10) then
+		s_time <= s_time + "1";
+	  	if (s_time = prescale) then
 	  		t_timer <= '1';
-	  		v_time := 0;
+	  		s_time <= "000000000000000000000000";
 	  	else
 	  		t_timer <= '0';
 	  	end if;
