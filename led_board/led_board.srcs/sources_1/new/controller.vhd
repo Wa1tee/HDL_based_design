@@ -52,6 +52,11 @@ architecture Behavioral of controller is
     );
   end component timer;
 
+  signal last_reset : STD_LOGIC := '0';
+  signal last_alarm : STD_LOGIC := '0';
+  signal last_speed : STD_LOGIC := '0';
+  signal last_iter  : STD_LOGIC := '0';
+
   signal t_reset : STD_LOGIC;
   signal t_clock : STD_LOGIC;
   signal t_timer : STD_LOGIC;
@@ -92,77 +97,39 @@ begin
     t_clock <= clock;
     t_reset <= reset;
 
-    if (rising_edge(speed)) then
-      if (s_speed = "001010") then
-        s_speed <= "011110";
-        s_blink <= "000011";
-      elsif (s_speed = "011110") then
-        s_speed <= "110010";
-        s_blink <= "000101";
-      else
-        s_speed <= "001010";
-        s_blink <= "000001";
-      end if;
-    end if;
-
-    if (rising_edge(iter)) then
-      if (s_iter = '1') then
-        s_iter <= '0';
-      else
-        s_iter <= '1';
-      end if;
-    end if;
-
-    if (rising_edge(alarm)) then
-      --s_alarm <= '1';
-      --s_count <= "000000";
-      s_alarm <= "1000110";
-    end if;
-
-    if (reset = '1') then
-        s_count <= "000000";
-        s_state <= "000";
-        s_speed <= "001010";
-        s_alarm <= "0000000";
-    
-    elsif (rising_edge(t_timer)) then
-        if (s_alarm = "0000000") then
-          if (s_state = "000") then
-                    --standby 4s
-              if (s_count = s_standby) then
-                s_state <= "001";
-                s_count <= "000000";
-              else
-                s_count <= s_count + "1";
-              end if;
-          else
-            --iterate states "001" through "101"
-            if (s_count = s_speed) then
-              s_count <= "000000";
-              if (s_state = "101") then
-                s_state <= "001";
-              else
-                s_state <= s_state + "1";
-              end if;
-            end if;
-          end if;
-        else
-          if (s_count = s_blink) then
-            s_count <= "000000";
-            if (s_state = "000") then
-              s_state <= "111";
-            else
-              s_state <= "000";
-            end if;
-          else
-            s_count <= s_count + "1";
-          end if;
-
-        end if;
-    end if;
 
     if (rising_edge(clock)) then
+        if (speed = '1' and last_speed = '0') then
 
+          if (s_speed = "001010") then
+            s_speed <= "011110";
+            s_blink <= "000011";
+          elsif (s_speed = "011110") then
+            s_speed <= "110010";
+            s_blink <= "000101";
+          else
+            s_speed <= "001010";
+            s_blink <= "000001";
+          end if;
+        end if;
+        last_speed <= speed;
+
+        if (iter = last_iter) then
+           if (s_iter = '1') then
+             s_iter <= '0';
+           else
+             s_iter <= '1';
+           end if;
+        end if;
+        last_iter <= iter;
+
+        if (alarm = '1' and last_alarm = '0') then
+          --s_alarm <= '1';
+          --s_count <= "000000";
+          s_alarm <= "1000110";
+        end if;
+        last_alarm <= alarm;
+        
         if (s_iter = '0') then
           
           if (s_state = "000") then
@@ -225,6 +192,55 @@ begin
         G <= s_G;
         B <= s_B;
     end if;
+
+    
+
+    
+
+    
+
+    if (reset = '1') then
+        s_count <= "000000";
+        s_state <= "000";
+        s_speed <= "001010";
+        s_alarm <= "0000000";
+    
+    elsif (rising_edge(t_timer)) then
+        if (s_alarm = "0000000") then
+          if (s_state = "000") then
+                    --standby 4s
+              if (s_count = s_standby) then
+                s_state <= "001";
+                s_count <= "000000";
+              else
+                s_count <= s_count + "1";
+              end if;
+          else
+            --iterate states "001" through "101"
+            if (s_count = s_speed) then
+              s_count <= "000000";
+              if (s_state = "101") then
+                s_state <= "001";
+              else
+                s_state <= s_state + "1";
+              end if;
+            end if;
+          end if;
+        else
+          if (s_count = s_blink) then
+            s_count <= "000000";
+            if (s_state = "000") then
+              s_state <= "111";
+            else
+              s_state <= "000";
+            end if;
+          else
+            s_count <= s_count + "1";
+          end if;
+
+        end if;
+    end if;
+
   end process;
 
 end Behavioral;

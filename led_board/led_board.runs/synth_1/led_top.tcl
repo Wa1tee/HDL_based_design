@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -44,8 +45,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/Zybo-Z7-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/Zybo-Z7-Master.xdc]
+read_xdc C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/constrs_1/imports/led_board/Zybo-Z7-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/constrs_1/imports/led_board/Zybo-Z7-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

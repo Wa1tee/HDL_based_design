@@ -65,8 +65,18 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param xicom.use_bs_reader 1
   open_checkpoint led_top_routed.dcp
   set_property webtalk.parent_dir C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.cache/wt [current_project]
+  set src_rc [catch { 
+    puts "source C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/script.tcl"
+    source C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/script.tcl
+  } _RESULT] 
+  if {$src_rc} { 
+    send_msg_id runtcl-1 error "$_RESULT"
+    send_msg_id runtcl-2 error "sourcing script C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/script.tcl failed"
+    return -code error
+  }
   catch { write_mem_info -force led_top.mmi }
   write_bitstream -force led_top.bit 
   catch {write_debug_probes -quiet -force led_top}

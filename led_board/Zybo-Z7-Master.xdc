@@ -35,9 +35,9 @@ set_property -dict { PACKAGE_PIN T5    IOSTANDARD LVCMOS33 } [get_ports { led5_g
 set_property -dict { PACKAGE_PIN Y12   IOSTANDARD LVCMOS33 } [get_ports { led5_b }]; #IO_L20P_T3_13 Sch=led5_b
 
 ##Fix
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets btn_IBUF[1]]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets btn_IBUF[2]]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets btn_IBUF[3]]
+# set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets btn_IBUF[1]]
+# set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets btn_IBUF[2]]
+# set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets btn_IBUF[3]]
 
 
 ##RGB LED 6
