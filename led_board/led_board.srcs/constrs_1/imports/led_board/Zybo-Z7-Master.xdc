@@ -30,14 +30,11 @@ set_property -dict {PACKAGE_PIN Y16 IOSTANDARD LVCMOS33} [get_ports {btn[3]}]
 
 
 ##RGB LED 5 (Zybo Z7-20 only)
-set_property -dict { PACKAGE_PIN Y11   IOSTANDARD LVCMOS33 } [get_ports { led5_r }]; #IO_L18N_T2_13 Sch=led5_r
-set_property -dict { PACKAGE_PIN T5    IOSTANDARD LVCMOS33 } [get_ports { led5_g }]; #IO_L19P_T3_13 Sch=led5_g
-set_property -dict { PACKAGE_PIN Y12   IOSTANDARD LVCMOS33 } [get_ports { led5_b }]; #IO_L20P_T3_13 Sch=led5_b
 
 ##Fix
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {btn_IBUF[1]}]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {btn_IBUF[2]}]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {btn_IBUF[3]}]
+# set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {btn_IBUF[1]}]
+# set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {btn_IBUF[2]}]
+# set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {btn_IBUF[3]}]
 
 
 ##RGB LED 6
@@ -226,3 +223,28 @@ set_property IOSTANDARD LVCMOS33 [get_ports {led5_b[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {led5_b[7]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {led5_g[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {led5_b[6]}]
+
+set_property PACKAGE_PIN V18 [get_ports {led5_b[6]}]
+set_property PACKAGE_PIN R18 [get_ports {led5_g[0]}]
+set_property PACKAGE_PIN V17 [get_ports {led5_b[7]}]
+set_property PACKAGE_PIN T19 [get_ports {led5_b[0]}]
+set_property PACKAGE_PIN U20 [get_ports {led5_r[2]}]
+set_property PACKAGE_PIN P18 [get_ports {led5_b[2]}]
+set_property PACKAGE_PIN T17 [get_ports {led5_g[1]}]
+set_property PACKAGE_PIN N20 [get_ports {led5_r[5]}]
+set_property PACKAGE_PIN Y19 [get_ports {led5_g[6]}]
+set_property PACKAGE_PIN P15 [get_ports {led5_b[1]}]
+set_property PACKAGE_PIN Y18 [get_ports {led5_g[7]}]
+set_property PACKAGE_PIN N17 [get_ports {led5_b[3]}]
+set_property PACKAGE_PIN R17 [get_ports {led5_g[2]}]
+set_property PACKAGE_PIN N18 [get_ports {led5_r[7]}]
+set_property PACKAGE_PIN R16 [get_ports {led5_g[3]}]
+set_property PACKAGE_PIN P20 [get_ports {led5_r[4]}]
+set_property PACKAGE_PIN W19 [get_ports {led5_b[4]}]
+set_property PACKAGE_PIN V20 [get_ports {led5_r[1]}]
+set_property PACKAGE_PIN W16 [get_ports {led5_g[4]}]
+set_property PACKAGE_PIN W18 [get_ports {led5_b[5]}]
+set_property PACKAGE_PIN P19 [get_ports {led5_r[6]}]
+set_property PACKAGE_PIN T20 [get_ports {led5_r[3]}]
+set_property PACKAGE_PIN V16 [get_ports {led5_g[5]}]
+set_property PACKAGE_PIN W20 [get_ports {led5_r[0]}]

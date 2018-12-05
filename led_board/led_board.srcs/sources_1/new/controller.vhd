@@ -17,7 +17,9 @@
 -- Additional Comments:
 --
 ----------------------------------------------------------------------------------
-
+-- TODO: Split into two or three processes
+--
+---------------------
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -129,7 +131,7 @@ begin
           s_alarm <= "1000110";
         end if;
         last_alarm <= alarm;
-        
+
         if (s_iter = '0') then
           
           if (s_state = "000") then
@@ -188,10 +190,10 @@ begin
             s_B  <= "00000000";
           end if;
         end if;
-        R <= s_R;
-        G <= s_G;
-        B <= s_B;
     end if;
+    R <= s_R;
+    G <= s_G;
+    B <= s_B;
 
     
 
@@ -227,6 +229,7 @@ begin
             end if;
           end if;
         else
+          s_alarm <= s_alarm - "1";
           if (s_count = s_blink) then
             s_count <= "000000";
             if (s_state = "000") then
