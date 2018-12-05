@@ -1,0 +1,78 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
+| Date         : Wed Dec  5 16:28:02 2018
+| Host         : Waitee-Desktop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file led_top_control_sets_placed.rpt
+| Design       : led_top
+| Device       : xc7z020
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     9 |
+| Unused register locations in slices containing registers |    36 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            2 |
+|      4 |            1 |
+|      6 |            2 |
+|     10 |            1 |
+|     12 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              54 |           12 |
+| No           | No                    | Yes                    |              64 |            9 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              12 |            2 |
+| Yes          | Yes                   | No                     |              10 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+------------------------+--------------------+------------------+----------------+
+|     Clock Signal    |      Enable Signal     |  Set/Reset Signal  | Slice Load Count | Bel Load Count |
++---------------------+------------------------+--------------------+------------------+----------------+
+|  btn_IBUF_BUFG[1]   |                        | btn_IBUF[0]        |                1 |              2 |
+|  btn_IBUF_BUFG[3]   |                        |                    |                1 |              2 |
+|  btn_IBUF_BUFG[2]   |                        |                    |                1 |              4 |
+|  led/module/t_timer |                        | btn_IBUF[0]        |                1 |              6 |
+|  btn_IBUF_BUFG[2]   |                        | btn_IBUF[0]        |                1 |              6 |
+|  sysclk_IBUF_BUFG   | led/s_B_0              | led/s_R[7]_i_1_n_0 |                1 |             10 |
+|  led/module/t_timer | led/s_count[5]_i_1_n_0 | btn_IBUF[0]        |                2 |             12 |
+|  sysclk_IBUF_BUFG   |                        |                    |               10 |             48 |
+|  sysclk_IBUF_BUFG   |                        | btn_IBUF[0]        |                6 |             50 |
++---------------------+------------------------+--------------------+------------------+----------------+
+
+

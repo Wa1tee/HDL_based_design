@@ -54,7 +54,7 @@ architecture Behavioral of controller_tb is
     signal iter  : STD_LOGIC;
     signal R : STD_LOGIC_vector (7 downto 0);
     signal G : STD_LOGIC_vector (7 downto 0);
-    signal B : STD_LOGIC_vector (7 downto 0));
+    signal B : STD_LOGIC_vector (7 downto 0);
 
 begin
     DUT: controller
