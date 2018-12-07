@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
-| Date             : Thu Dec  6 00:30:15 2018
-| Host             : Waitee-Desktop running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date             : Fri Dec  7 14:41:17 2018
+| Host             : WAITEE-LAPTOP running 64-bit major release  (build 9200)
 | Command          : report_power -file led_top_power_routed.rpt -pb led_top_power_summary_routed.pb -rpx led_top_power_routed.rpx
 | Design           : led_top
 | Device           : xc7z020clg400-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.154        |
+| Total On-Chip Power (W)  | 0.115        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.048        |
-| Device Static (W)        | 0.107        |
+| Dynamic (W)              | 0.009        |
+| Device Static (W)        | 0.106        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 83.2         |
-| Junction Temperature (C) | 26.8         |
+| Max Ambient (C)          | 83.7         |
+| Junction Temperature (C) | 26.3         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      167 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       55 |     53200 |            0.10 |
-|   Register     |    <0.001 |       81 |    106400 |            0.08 |
-|   CARRY4       |    <0.001 |        6 |     13300 |            0.05 |
-|   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |    <0.001 |      141 |       --- |             --- |
-| I/O            |     0.045 |       29 |       125 |           23.20 |
-| Static Power   |     0.107 |          |           |                 |
-| Total          |     0.154 |          |           |                 |
+| Clocks         |     0.002 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      202 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       75 |     53200 |            0.14 |
+|   Register     |    <0.001 |       76 |    106400 |            0.07 |
+|   CARRY4       |    <0.001 |        9 |     13300 |            0.07 |
+|   Others       |     0.000 |        6 |       --- |             --- |
+| Signals        |    <0.001 |      136 |       --- |             --- |
+| I/O            |     0.006 |        8 |       125 |            6.40 |
+| Static Power   |     0.106 |          |           |                 |
+| Total          |     0.115 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.010 |       0.003 |      0.008 |
-| Vccaux    |       1.800 |     0.012 |       0.002 |      0.010 |
-| Vcco33    |       3.300 |     0.014 |       0.013 |      0.001 |
+| Vccint    |       1.000 |     0.011 |       0.003 |      0.007 |
+| Vccaux    |       1.800 |     0.010 |       0.000 |      0.010 |
+| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -84,7 +84,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.017 |       0.000 |      0.017 |
+| Vccpint   |       1.000 |     0.016 |       0.000 |      0.016 |
 | Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
 | Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -147,9 +147,9 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| led_top    |     0.048 |
+| led_top    |     0.009 |
 |   led      |     0.002 |
-|     module |    <0.001 |
+|     module |     0.001 |
 +------------+-----------+
 
 
