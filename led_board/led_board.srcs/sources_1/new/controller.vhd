@@ -70,7 +70,7 @@ architecture Behavioral of controller is
   signal s_iter   : STD_LOGIC := '0';
 
   signal s_alarm : unsigned(6 downto 0) := "0000000";
-  signal s_blink : unsigned(5 downto 0) := "000001";
+  signal s_blink : unsigned(4 downto 0) := "00001";
 
 
 
@@ -94,46 +94,48 @@ begin
       t_timer => t_timer
     );
 
-  state : process (reset, t_timer, clock, alarm, speed, iter)
+  
+
+  leds : process (reset, clock)
   begin
     t_clock <= clock;
     t_reset <= reset;
 
 
     if (rising_edge(clock)) then
-        if (speed = '1' and last_speed = '0') then
+        --if (speed = '1' and last_speed = '0') then
 
-          if (s_speed = "001010") then
-            s_speed <= "011110";
-            s_blink <= "000011";
-          elsif (s_speed = "011110") then
-            s_speed <= "110010";
-            s_blink <= "000101";
-          else
-            s_speed <= "001010";
-            s_blink <= "000001";
-          end if;
-        end if;
-        last_speed <= speed;
+        --  if (s_speed = "001010") then
+        --    s_speed <= "011110";
+        --    s_blink <= "000011";
+        --  elsif (s_speed = "011110") then
+        --    s_speed <= "110010";
+        --    s_blink <= "000101";
+        --  else
+        --    s_speed <= "001010";
+        --    s_blink <= "000001";
+        --  end if;
+        --end if;
+        --last_speed <= speed;
 
-        if (iter = last_iter) then
-           if (s_iter = '1') then
-             s_iter <= '0';
-           else
-             s_iter <= '1';
-           end if;
-        end if;
-        last_iter <= iter;
+        --if (iter = last_iter) then
+        --   if (s_iter = '1') then
+        --     s_iter <= '0';
+        --   else
+        --     s_iter <= '1';
+        --   end if;
+        --end if;
+        --last_iter <= iter;
 
-        if (alarm = '1' and last_alarm = '0') then
-          --s_alarm <= '1';
-          --s_count <= "000000";
-          s_alarm <= "1000110";
-        end if;
-        last_alarm <= alarm;
+        --if (alarm = '1' and last_alarm = '0') then
+        --  --s_alarm <= '1';
+        --  --s_count <= "000000";
+        --  s_alarm <= "1000110";
+        --end if;
+        --last_alarm <= alarm;
 
-        if (s_iter = '0') then
-          
+        case(s_iter) is
+        when '0' =>
           if (s_state = "000") then
             s_R  <= "11111111";
             s_G  <= "11111111";
@@ -163,7 +165,8 @@ begin
             s_G  <= "00000000";
             s_B  <= "10000000";  
           end if;
-        else
+        when '1' =>
+          
           if (s_state = "001") then
             s_R  <= "11111111";
             s_G  <= "00000000";
@@ -188,8 +191,14 @@ begin
             s_R  <= "00000000";
             s_G  <= "11111111";
             s_B  <= "00000000";
-          end if;
-        end if;
+          end if;        
+        when others =>
+          s_R  <= "00000000";
+          s_G  <= "00000000";
+          s_B  <= "00000000";
+        end case;
+
+
     end if;
     R <= s_R;
     G <= s_G;
@@ -197,16 +206,103 @@ begin
 
     
 
+  
     
 
+    --if (reset = '1') then
+    --    s_count <= "000000";
+    --    s_state <= "000";
+    --    s_speed <= "001010";
+    --    s_alarm <= "0000000";
     
+    --elsif (rising_edge(t_timer)) then
+    --    if (s_alarm = "0000000") then
+    --      if (s_state = "000") then
+    --                --standby 4s
+    --          if (s_count = s_standby) then
+    --            s_state <= "001";
+    --            s_count <= "000000";
+    --          else
+    --            s_count <= s_count + "1";
+    --          end if;
+    --      else
+    --        --iterate states "001" through "101"
+    --        if (s_count = s_speed) then
+    --          s_count <= "000000";
+    --          if (s_state = "101") then
+    --            s_state <= "001";
+    --          else
+    --            s_state <= s_state + "1";
+    --          end if;
+    --        end if;
+    --      end if;
+    --    else
+    --      s_alarm <= s_alarm - "1";
+    --      if (s_count = s_blink) then
+    --        s_count <= "000000";
+    --        if (s_state = "000") then
+    --          s_state <= "111";
+    --        else
+    --          s_state <= "000";
+    --        end if;
+    --      else
+    --        s_count <= s_count + "1";
+    --      end if;
+
+    --    end if;
+    --end if;
+
+  end process;
+
+  states : process (reset, speed, alarm, iter, t_timer)
+  begin
+    --if (reset = '1') then
+    --    s_count <= "000000";
+    --    s_state <= "000";
+    --    s_speed <= "001010";
+    --    s_alarm <= "0000000";
+    
+    
+
+    if (speed = '1' and last_speed = '0') then
+
+      case(s_speed) is
+        when "001010" => 
+          s_speed <= "011110";
+          s_blink <= "000011";
+        when "011110" =>
+          s_speed <= "110010";
+          s_blink <= "000101";
+        when others =>
+          s_speed <= "001010";
+          s_blink <= "000001";
+      end case;
+    end if;
+    last_speed <= speed;
+
+    if (iter = last_iter) then
+      case(s_iter) is
+        when '1' =>
+          s_iter <= '0';
+        when others =>
+          s_iter <= '1';
+      end case;
+    end if;
+    last_iter <= iter;
+
+    if (alarm = '1' and last_alarm = '0') then
+      --s_alarm <= '1';
+      --s_count <= "000000";
+      s_alarm <= "1000110";
+    end if;
+    last_alarm <= alarm;
 
     if (reset = '1') then
         s_count <= "000000";
         s_state <= "000";
         s_speed <= "001010";
         s_alarm <= "0000000";
-    
+
     elsif (rising_edge(t_timer)) then
         if (s_alarm = "0000000") then
           if (s_state = "000") then
@@ -243,7 +339,6 @@ begin
 
         end if;
     end if;
-
-  end process;
+  end process states;
 
 end Behavioral;

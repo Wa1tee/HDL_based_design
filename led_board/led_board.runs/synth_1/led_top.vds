@@ -1,9 +1,9 @@
 #-----------------------------------------------------------
-# Vivado v2018.2 (64-bit)
-# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
-# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Dec  7 14:38:50 2018
-# Process ID: 6588
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Fri Dec  7 21:06:51 2018
+# Process ID: 4792
 # Current directory: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.runs/synth_1
 # Command line: vivado.exe -log led_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source led_top.tcl
 # Log file: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.runs/synth_1/led_top.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10740 
+INFO: Helper process launched with PID 6644 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 374.879 ; gain = 99.051
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 374.441 ; gain = 97.930
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'led_top' [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/led_top.vhd:44]
 INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:36' bound to instance 'led' of component 'controller' [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/led_top.vhd:72]
@@ -25,15 +25,19 @@ INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/waitee/Documents/
 INFO: [Synth 8-3491] module 'timer' declared at 'C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/timer.vhd:37' bound to instance 'module' of component 'timer' [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:90]
 INFO: [Synth 8-638] synthesizing module 'timer' [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/timer.vhd:44]
 INFO: [Synth 8-256] done synthesizing module 'timer' (1#1) [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/timer.vhd:44]
-WARNING: [Synth 8-614] signal 's_R' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:97]
-WARNING: [Synth 8-614] signal 's_G' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:97]
-WARNING: [Synth 8-614] signal 's_B' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:97]
-WARNING: [Synth 8-5787] Register s_alarm_reg in module controller is clocked by two different clocks in the same process. This may cause simulation mismatches and synthesis errors. Consider using different process statements  [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:131]
-WARNING: [Synth 8-5787] Register s_alarm_reg in module controller is clocked by two different clocks in the same process. This may cause simulation mismatches and synthesis errors. Consider using different process statements  [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:131]
+INFO: [Synth 8-226] default block is never used [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:137]
+WARNING: [Synth 8-614] signal 's_R' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:99]
+WARNING: [Synth 8-614] signal 's_G' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:99]
+WARNING: [Synth 8-614] signal 's_B' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:99]
+WARNING: [Synth 8-614] signal 'last_speed' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:257]
+WARNING: [Synth 8-614] signal 's_speed' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:257]
+WARNING: [Synth 8-614] signal 'last_iter' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:257]
+WARNING: [Synth 8-614] signal 's_iter' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:257]
+WARNING: [Synth 8-614] signal 'last_alarm' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:257]
 INFO: [Synth 8-256] done synthesizing module 'controller' (2#1) [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:48]
 INFO: [Synth 8-256] done synthesizing module 'led_top' (3#1) [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/led_top.vhd:44]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 429.957 ; gain = 154.129
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 429.730 ; gain = 153.219
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -46,10 +50,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 429.957 ; gain = 154.129
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 429.730 ; gain = 153.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 429.957 ; gain = 154.129
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 429.730 ; gain = 153.219
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -65,39 +69,34 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 794.691 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 794.184 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 794.691 ; gain = 518.863
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 794.184 ; gain = 517.672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 794.691 ; gain = 518.863
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 794.184 ; gain = 517.672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 794.691 ; gain = 518.863
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 794.184 ; gain = 517.672
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "t_timer" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-802] inferred FSM for state register 's_speed_reg' in module 'controller'
 INFO: [Synth 8-5544] ROM "s_R" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "s_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "s_state" won't be mapped to RAM because it is too sparse
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 iSTATE0 |                              001 |                           001010
-                 iSTATE1 |                              010 |                           011110
-                  iSTATE |                              100 |                           110010
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 's_speed_reg' using encoding 'one-hot' in module 'controller'
+INFO: [Synth 8-5546] ROM "s_speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_blink" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 's_speed_reg' [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:269]
+WARNING: [Synth 8-327] inferring latch for variable 's_blink_reg' [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:272]
+WARNING: [Synth 8-327] inferring latch for variable 's_iter_reg' [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:137]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 794.691 ; gain = 518.863
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 794.184 ; gain = 517.672
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -118,21 +117,21 @@ Detailed RTL Component Info :
 +---Registers : 
 	               24 Bit    Registers := 1     
 	                8 Bit    Registers := 4     
-	                7 Bit    Registers := 2     
-	                6 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 11    
+	                1 Bit    Registers := 7     
 +---Muxes : 
 	   2 Input     24 Bit        Muxes := 1     
 	  10 Input      8 Bit        Muxes := 2     
 	  11 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 5     
 	   3 Input      6 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 4     
-	   3 Input      3 Bit        Muxes := 3     
-	   2 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 8     
+	   2 Input      3 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
 	   6 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -168,19 +167,18 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
 	                8 Bit    Registers := 3     
-	                7 Bit    Registers := 2     
-	                6 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
 +---Muxes : 
 	  10 Input      8 Bit        Muxes := 2     
 	  11 Input      8 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 5     
 	   3 Input      6 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 4     
-	   3 Input      3 Bit        Muxes := 3     
-	   2 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
 	   6 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -199,15 +197,18 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5546] ROM "led/module/t_timer" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design led_top has unconnected port btn[2]
+WARNING: [Synth 8-3331] design led_top has unconnected port btn[1]
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\led/s_blink_reg[0] )
-INFO: [Synth 8-3886] merging instance 'led/s_blink_reg[3]' (FDE) to 'led/s_blink_reg[4]'
-INFO: [Synth 8-3886] merging instance 'led/s_blink_reg[4]' (FDE) to 'led/s_blink_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led/s_blink_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led/s_blink_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led/s_blink_reg[4] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led/s_blink_reg[5] )
-INFO: [Synth 8-3886] merging instance 'led/s_B_reg[0]' (FDSE) to 'led/s_B_reg[1]'
-INFO: [Synth 8-3886] merging instance 'led/s_B_reg[1]' (FDSE) to 'led/s_B_reg[2]'
-INFO: [Synth 8-3886] merging instance 'led/s_B_reg[2]' (FDSE) to 'led/s_B_reg[3]'
-INFO: [Synth 8-3886] merging instance 'led/s_B_reg[3]' (FDSE) to 'led/s_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'led/s_B_reg[4]' (FDSE) to 'led/s_B_reg[5]'
+INFO: [Synth 8-3886] merging instance 'led/s_B_reg[0]' (FDSE) to 'led/s_B_reg[6]'
+INFO: [Synth 8-3886] merging instance 'led/s_B_reg[1]' (FDSE) to 'led/s_B_reg[6]'
+INFO: [Synth 8-3886] merging instance 'led/s_B_reg[2]' (FDSE) to 'led/s_B_reg[6]'
+INFO: [Synth 8-3886] merging instance 'led/s_B_reg[3]' (FDSE) to 'led/s_B_reg[6]'
+INFO: [Synth 8-3886] merging instance 'led/s_B_reg[4]' (FDSE) to 'led/s_B_reg[6]'
 INFO: [Synth 8-3886] merging instance 'led/s_B_reg[5]' (FDSE) to 'led/s_B_reg[6]'
 INFO: [Synth 8-3886] merging instance 'led/s_G_reg[0]' (FDSE) to 'led/s_G_reg[1]'
 INFO: [Synth 8-3886] merging instance 'led/s_G_reg[1]' (FDSE) to 'led/s_G_reg[2]'
@@ -216,16 +217,19 @@ INFO: [Synth 8-3886] merging instance 'led/s_G_reg[3]' (FDSE) to 'led/s_G_reg[4]
 INFO: [Synth 8-3886] merging instance 'led/s_G_reg[4]' (FDSE) to 'led/s_G_reg[5]'
 INFO: [Synth 8-3886] merging instance 'led/s_G_reg[5]' (FDSE) to 'led/s_G_reg[6]'
 INFO: [Synth 8-3886] merging instance 'led/s_G_reg[6]' (FDSE) to 'led/s_G_reg[7]'
-INFO: [Synth 8-3886] merging instance 'led/s_R_reg[0]' (FDSE) to 'led/s_R_reg[1]'
-INFO: [Synth 8-3886] merging instance 'led/s_R_reg[1]' (FDSE) to 'led/s_R_reg[2]'
-INFO: [Synth 8-3886] merging instance 'led/s_R_reg[2]' (FDSE) to 'led/s_R_reg[3]'
-INFO: [Synth 8-3886] merging instance 'led/s_R_reg[3]' (FDSE) to 'led/s_R_reg[4]'
-INFO: [Synth 8-3886] merging instance 'led/s_R_reg[4]' (FDSE) to 'led/s_R_reg[5]'
+INFO: [Synth 8-3886] merging instance 'led/s_R_reg[0]' (FDSE) to 'led/s_R_reg[6]'
+INFO: [Synth 8-3886] merging instance 'led/s_R_reg[1]' (FDSE) to 'led/s_R_reg[6]'
+INFO: [Synth 8-3886] merging instance 'led/s_R_reg[2]' (FDSE) to 'led/s_R_reg[6]'
+INFO: [Synth 8-3886] merging instance 'led/s_R_reg[3]' (FDSE) to 'led/s_R_reg[6]'
+INFO: [Synth 8-3886] merging instance 'led/s_R_reg[4]' (FDSE) to 'led/s_R_reg[6]'
 INFO: [Synth 8-3886] merging instance 'led/s_R_reg[5]' (FDSE) to 'led/s_R_reg[6]'
 WARNING: [Synth 8-3332] Sequential element (led/s_blink_reg[5]) is unused and will be removed from module led_top.
+WARNING: [Synth 8-3332] Sequential element (led/s_blink_reg[4]) is unused and will be removed from module led_top.
+WARNING: [Synth 8-3332] Sequential element (led/s_blink_reg[3]) is unused and will be removed from module led_top.
+WARNING: [Synth 8-3332] Sequential element (led/s_blink_reg[2]) is unused and will be removed from module led_top.
 WARNING: [Synth 8-3332] Sequential element (led/s_blink_reg[0]) is unused and will be removed from module led_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 794.691 ; gain = 518.863
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 794.184 ; gain = 517.672
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -237,13 +241,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 794.691 ; gain = 518.863
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 794.184 ; gain = 517.672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 808.582 ; gain = 532.754
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 805.668 ; gain = 529.156
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -254,8 +258,9 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (led/s_iter_reg) is unused and will be removed from module led_top.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 809.855 ; gain = 534.027
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 806.438 ; gain = 529.926
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -279,7 +284,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 809.855 ; gain = 534.027
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.438 ; gain = 529.926
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -292,7 +297,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 809.855 ; gain = 534.027
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.438 ; gain = 529.926
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -304,25 +309,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 809.855 ; gain = 534.027
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.438 ; gain = 529.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 809.855 ; gain = 534.027
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.438 ; gain = 529.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 809.855 ; gain = 534.027
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.438 ; gain = 529.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 809.855 ; gain = 534.027
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.438 ; gain = 529.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -340,17 +345,17 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |     9|
-|3     |LUT1   |     1|
+|3     |LUT1   |     4|
 |4     |LUT2   |     7|
-|5     |LUT3   |    52|
-|6     |LUT4   |    25|
-|7     |LUT5   |     8|
-|8     |LUT6   |    18|
-|9     |FDCE   |    43|
-|10    |FDPE   |     1|
-|11    |FDRE   |    24|
-|12    |FDSE   |     8|
-|13    |IBUF   |     5|
+|5     |LUT3   |    50|
+|6     |LUT4   |    18|
+|7     |LUT5   |    10|
+|8     |LUT6   |    16|
+|9     |FDCE   |    41|
+|10    |FDRE   |    14|
+|11    |FDSE   |     5|
+|12    |LD     |     1|
+|13    |IBUF   |     2|
 |14    |OBUF   |     3|
 +------+-------+------+
 
@@ -358,30 +363,31 @@ Report Instance Areas:
 +------+-------------+-----------+------+
 |      |Instance     |Module     |Cells |
 +------+-------------+-----------+------+
-|1     |top          |           |   205|
-|2     |  led        |controller |   171|
+|1     |top          |           |   181|
+|2     |  led        |controller |   150|
 |3     |    \module  |timer      |    63|
 +------+-------------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 809.855 ; gain = 534.027
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.438 ; gain = 529.926
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 809.855 ; gain = 169.293
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 809.855 ; gain = 534.027
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 806.438 ; gain = 165.473
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.438 ; gain = 529.926
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 1 instances were transformed.
+  LD => LDCE: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-50 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+52 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 810.375 ; gain = 546.789
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 808.602 ; gain = 544.211
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.runs/synth_1/led_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file led_top_utilization_synth.rpt -pb led_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 810.375 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Dec  7 14:39:34 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 808.602 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  7 21:07:32 2018...
