@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
-| Date         : Wed Dec 19 22:00:23 2018
+| Date         : Thu Dec 20 01:53:58 2018
 | Host         : Waitee-Desktop running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file led_top_control_sets_placed.rpt
 | Design       : led_top
@@ -24,7 +24,7 @@ Table of Contents
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
 | Number of unique control sets                            |     9 |
-| Unused register locations in slices containing registers |    26 |
+| Unused register locations in slices containing registers |    18 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,12 +34,11 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      2 |            1 |
 |      4 |            1 |
-|      8 |            2 |
+|      8 |            1 |
 |     10 |            1 |
-|     14 |            1 |
-|    16+ |            3 |
+|     14 |            2 |
+|    16+ |            4 |
 +--------+--------------+
 
 
@@ -49,11 +48,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              32 |            8 |
-| No           | No                    | Yes                    |              74 |            8 |
-| No           | Yes                   | No                     |              30 |            4 |
-| Yes          | No                    | No                     |               4 |            2 |
-| Yes          | No                    | Yes                    |               8 |            1 |
+| No           | No                    | No                     |              44 |           10 |
+| No           | No                    | Yes                    |              86 |           12 |
+| No           | Yes                   | No                     |              30 |            5 |
+| Yes          | No                    | No                     |               4 |            1 |
+| Yes          | No                    | Yes                    |              16 |            2 |
 | Yes          | Yes                   | No                     |              10 |            1 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -64,15 +63,15 @@ Table of Contents
 +---------------------+---------------+---------------------------+------------------+----------------+
 |     Clock Signal    | Enable Signal |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
 +---------------------+---------------+---------------------------+------------------+----------------+
-|  led/module/t_timer |               |                           |                1 |              2 |
-|  sysclk_IBUF_BUFG   | led/p_0_in_0  |                           |                2 |              4 |
+|  sysclk_IBUF_BUFG   | led/p_0_in    |                           |                1 |              4 |
 |  led/module/t_timer |               | btn_IBUF[0]               |                2 |              8 |
-|  sysclk_IBUF_BUFG   | led/s_speed0  | btn_IBUF[0]               |                1 |              8 |
 |  sysclk_IBUF_BUFG   | led/s_B[6]    | led/s_R[6]_i_1_n_0        |                1 |             10 |
-|  led/module/t_timer |               | led/s_count[6]__0_i_1_n_0 |                2 |             14 |
+|  led/module/t_timer |               |                           |                2 |             14 |
+|  led/module/t_timer |               | led/s_count[6]__0_i_1_n_0 |                3 |             14 |
 |  sysclk_IBUF_BUFG   |               | count[7]_i_1_n_0          |                2 |             16 |
-|  sysclk_IBUF_BUFG   |               |                           |                7 |             30 |
-|  sysclk_IBUF_BUFG   |               | btn_IBUF[0]               |                6 |             66 |
+|  sysclk_IBUF_BUFG   | led/s_speed0  | btn_IBUF[0]               |                2 |             16 |
+|  sysclk_IBUF_BUFG   |               |                           |                8 |             30 |
+|  sysclk_IBUF_BUFG   |               | btn_IBUF[0]               |               10 |             78 |
 +---------------------+---------------+---------------------------+------------------+----------------+
 
 

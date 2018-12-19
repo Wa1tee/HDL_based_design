@@ -17,7 +17,7 @@
 -- Additional Comments:
 --
 ----------------------------------------------------------------------------------
--- TODO: Split into two or three processes
+--
 --
 ---------------------
 
@@ -77,20 +77,22 @@ architecture Behavioral of controller is
   signal s_count      : unsigned(6 downto 0) := "0000000";
   signal s_last_count : unsigned(6 downto 0) := "0000000";
 
-  signal s_alarmstatus      : STD_LOGIC := '0';
+  signal s_alarmstatus      : unsigned(6 downto 0) := "0000000";
   signal s_last_alarmstatus : unsigned(6 downto 0) := "0000000";
 
   signal s_iter   : STD_LOGIC := '0';
 
-  --signal s_blink    : unsigned(5 downto 0) := "000001";
   signal s_speed    : unsigned(5 downto 0) := "001010";
   signal s_standby  : STD_LOGIC := '1';
+
+  signal s_blink    : unsigned(5 downto 0) := "000001";
 
   function next_state (f_state : in unsigned(2 downto 0)) return unsigned(2 downto 0) is
   begin
     if (f_state = "101") then
       return "001";
-
+    elsif (f_state = "111") then
+      return "001";
     elsif (f_state = "000") then
       return "001";
     else
@@ -113,26 +115,25 @@ begin
     t_reset <= resetbtn;
 
     if (rising_edge(t_timer)) then
-      if (s_alarmstatus = '1') then
-        if (s_count = "1000110") then
+      if (s_alarmstatus > "0000000") then
+        if (s_count = s_blink) then
+          s_state <= "000";
           s_count <= "0000000";
-          s_alarmstatus <= '0';
-          s_state <= "001";
         else
-          if (s_count(0) = '1') then
-            s_state <= "000";
-          else
-            s_state <= "111";
-          end if;
-          s_count <= s_last_count +1;
+          s_state <= "111";
+          s_count <= s_last_count + 1;
+          
+          
 
         end if;
-        s_last_count <= s_count;
+        --s_last_count <= s_count;
+        s_alarmstatus <= s_last_alarmstatus -1;
       
       elsif (s_standby = '1') then
-        if (s_count = "101000") then
-          s_state <= next_state(s_last_state);
+        if (s_count = "0101000") then
+          s_state <= "001";
           s_standby <= '0';
+          s_count <= "0000000";
         else
           s_count <= s_last_count + "1";
         end if;  
@@ -145,7 +146,7 @@ begin
       end if;
     end if;
     
-    --s_last_alarmstatus <= s_alarmstatus;
+    s_last_alarmstatus <= s_alarmstatus;
     s_last_count <= s_count;
     s_last_state <= s_state;
 
@@ -153,21 +154,22 @@ begin
       s_state <= "000";
       s_count <= "0000000";
       s_speed <= "001010";
-      s_alarmstatus <= '0';
+      s_alarmstatus <= "0000000";
       s_standby <= '1';
+      s_blink <= "000001";
 
     elsif (rising_edge(clock)) then
       if (speedbtn = '1' AND last_speedbtn = '0') then
         case(s_speed) is
         when "001010" => 
           s_speed <= "011110";
-          --s_blink <= "000011";
+          s_blink <= "000011";
         when "011110" =>
           s_speed <= "110010";
-          --s_blink <= "000101";
+          s_blink <= "000101";
         when others =>
           s_speed <= "001010";
-          --s_blink <= "000001";
+          s_blink <= "000001";
       end case;
       end if;
       last_speedbtn <= speedbtn;
@@ -182,7 +184,7 @@ begin
       last_iterbtn <= iterbtn;
 
       if (alarmbtn = '1' AND last_alarmbtn = '0') then
-        s_alarmstatus <= '1';
+        s_alarmstatus <= "1000110";
         s_count <= "0000000";
       end if;
 

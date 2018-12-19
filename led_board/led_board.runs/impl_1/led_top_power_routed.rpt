@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.2 (win64) Build 2348494 Mon Oct  1 18:25:44 MDT 2018
-| Date             : Wed Dec 19 22:00:59 2018
+| Date             : Thu Dec 20 01:54:34 2018
 | Host             : Waitee-Desktop running 64-bit major release  (build 9200)
 | Command          : report_power -file led_top_power_routed.rpt -pb led_top_power_summary_routed.pb -rpx led_top_power_routed.rpx
 | Design           : led_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.112        |
+| Total On-Chip Power (W)  | 0.110        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.006        |
+| Dynamic (W)              | 0.004        |
 | Device Static (W)        | 0.106        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 83.7         |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      207 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       74 |     53200 |            0.14 |
-|   Register     |    <0.001 |       79 |    106400 |            0.07 |
+| Slice Logic    |    <0.001 |      238 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       82 |     53200 |            0.15 |
+|   Register     |    <0.001 |       95 |    106400 |            0.09 |
 |   CARRY4       |    <0.001 |        9 |     13300 |            0.07 |
 |   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |    <0.001 |      139 |       --- |             --- |
-| I/O            |     0.003 |        8 |       125 |            6.40 |
+| Signals        |    <0.001 |      160 |       --- |             --- |
+| I/O            |     0.001 |        8 |       125 |            6.40 |
 | Static Power   |     0.106 |          |           |                 |
-| Total          |     0.112 |          |           |                 |
+| Total          |     0.110 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.010 |       0.003 |      0.007 |
 | Vccaux    |       1.800 |     0.010 |       0.000 |      0.010 |
-| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -147,7 +147,7 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| led_top    |     0.006 |
+| led_top    |     0.004 |
 |   led      |     0.002 |
 |     module |    <0.001 |
 +------------+-----------+
