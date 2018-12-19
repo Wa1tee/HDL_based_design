@@ -47,8 +47,8 @@ architecture Behavioral of led_top is
           resetbtn : in STD_LOGIC;
           clock : in STD_LOGIC;
           alarmbtn : in STD_LOGIC;
-          speed : in STD_LOGIC;
-          iter  : in STD_LOGIC;
+          speedbtn : in STD_LOGIC;
+          iterbtn  : in STD_LOGIC;
           R : out STD_LOGIC_vector (7 downto 0);
           G : out STD_LOGIC_vector (7 downto 0);
           B : out STD_LOGIC_vector (7 downto 0)
@@ -64,6 +64,7 @@ architecture Behavioral of led_top is
   signal B_out : STD_LOGIC;
     
   signal count : unsigned(7 downto 0);
+  signal last_count : unsigned(7 downto 0);
 
 
 begin
@@ -73,8 +74,8 @@ port map(
 	clock 	=> sysclk,
 	resetbtn 	=> btn(0),
 	alarmbtn 	=> btn(1),
-	speed 	=> btn(2),
-	iter  	=> btn(3),
+	speedbtn 	=> btn(2),
+	iterbtn  	=> btn(3),
 	R 		=> R,
 	G 		=> G,
 	B 		=> B
@@ -107,8 +108,10 @@ begin
     if (count = "11111111") then
       count <= "00000000";
     else
-      count <= count + "1";
+      count <= last_count + "1";
     end if;
+
+    last_count <= count;
 
     led5_r <= R_out;
     led5_g <= G_out;

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/constrs_1/imports/led_board/Zybo-Z7-Master.xdc rfile:../../../led_board.srcs/constrs_1/imports/led_board/Zybo-Z7-Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/constrs_1/imports/led_board/Zybo-Z7-Master.xdc rfile:../../../led_board.srcs/constrs_1/imports/led_board/Zybo-Z7-Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN K17   IOSTANDARD LVCMOS33 } [get_ports { sysclk }]; #IO_L12P_T1_MRCC_35 Sch=sysclk
 set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]

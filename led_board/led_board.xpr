@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2018.2 (64-bit)              -->
+<!-- Product Version: Vivado v2018.2.2 (64-bit)              -->
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="0f955ffd92484a519d381bfe91bbc586"/>
