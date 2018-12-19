@@ -44,9 +44,9 @@ end led_top;
 architecture Behavioral of led_top is
 	component controller
         Port (
-          reset : in STD_LOGIC;
+          resetbtn : in STD_LOGIC;
           clock : in STD_LOGIC;
-          alarm : in STD_LOGIC;
+          alarmbtn : in STD_LOGIC;
           speed : in STD_LOGIC;
           iter  : in STD_LOGIC;
           R : out STD_LOGIC_vector (7 downto 0);
@@ -62,8 +62,7 @@ architecture Behavioral of led_top is
   signal R_out : STD_LOGIC;
   signal G_out : STD_LOGIC;
   signal B_out : STD_LOGIC;
-  
-  
+    
   signal count : unsigned(7 downto 0);
 
 
@@ -72,8 +71,8 @@ begin
 led : controller
 port map(
 	clock 	=> sysclk,
-	reset 	=> btn(0),
-	alarm 	=> btn(1),
+	resetbtn 	=> btn(0),
+	alarmbtn 	=> btn(1),
 	speed 	=> btn(2),
 	iter  	=> btn(3),
 	R 		=> R,

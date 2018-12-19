@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
-# Vivado v2018.2.2 (64-bit)
-# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
-# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
-# Start of session at: Fri Dec  7 21:06:51 2018
-# Process ID: 4792
-# Current directory: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.runs/synth_1
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Dec 19 16:50:41 2018
+# Process ID: 17280
+# Current directory: C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.runs/synth_1
 # Command line: vivado.exe -log led_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source led_top.tcl
-# Log file: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.runs/synth_1/led_top.vds
-# Journal file: C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.runs/synth_1\vivado.jou
+# Log file: C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.runs/synth_1/led_top.vds
+# Journal file: C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source led_top.tcl -notrace
 Command: synth_design -top led_top -part xc7z020clg400-1
@@ -15,29 +15,41 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6644 
+INFO: Helper process launched with PID 17196 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 374.441 ; gain = 97.930
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 357.262 ; gain = 99.500
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'led_top' [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/led_top.vhd:44]
-INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:36' bound to instance 'led' of component 'controller' [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/led_top.vhd:72]
-INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:48]
-INFO: [Synth 8-3491] module 'timer' declared at 'C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/timer.vhd:37' bound to instance 'module' of component 'timer' [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:90]
-INFO: [Synth 8-638] synthesizing module 'timer' [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/timer.vhd:44]
-INFO: [Synth 8-256] done synthesizing module 'timer' (1#1) [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/timer.vhd:44]
-INFO: [Synth 8-226] default block is never used [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:137]
-WARNING: [Synth 8-614] signal 's_R' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:99]
-WARNING: [Synth 8-614] signal 's_G' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:99]
-WARNING: [Synth 8-614] signal 's_B' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:99]
-WARNING: [Synth 8-614] signal 'last_speed' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:257]
-WARNING: [Synth 8-614] signal 's_speed' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:257]
-WARNING: [Synth 8-614] signal 'last_iter' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:257]
-WARNING: [Synth 8-614] signal 's_iter' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:257]
-WARNING: [Synth 8-614] signal 'last_alarm' is read in the process but is not in the sensitivity list [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:257]
-INFO: [Synth 8-256] done synthesizing module 'controller' (2#1) [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'led_top' (3#1) [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/led_top.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'led_top' [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/led_top.vhd:44]
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:36' bound to instance 'led' of component 'controller' [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/led_top.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:48]
+INFO: [Synth 8-3491] module 'timer' declared at 'C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/timer.vhd:37' bound to instance 'module' of component 'timer' [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'timer' [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/timer.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'timer' (1#1) [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/timer.vhd:44]
+INFO: [Synth 8-226] default block is never used [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:140]
+WARNING: [Synth 8-614] signal 's_R' is read in the process but is not in the sensitivity list [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:102]
+WARNING: [Synth 8-614] signal 's_G' is read in the process but is not in the sensitivity list [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:102]
+WARNING: [Synth 8-614] signal 's_B' is read in the process but is not in the sensitivity list [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:102]
+WARNING: [Synth 8-614] signal 'speed' is read in the process but is not in the sensitivity list [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:102]
+WARNING: [Synth 8-614] signal 'last_speed' is read in the process but is not in the sensitivity list [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:102]
+WARNING: [Synth 8-614] signal 's_speed' is read in the process but is not in the sensitivity list [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:102]
+WARNING: [Synth 8-614] signal 'iter' is read in the process but is not in the sensitivity list [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:102]
+WARNING: [Synth 8-614] signal 'last_iter' is read in the process but is not in the sensitivity list [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:102]
+WARNING: [Synth 8-614] signal 's_iter' is read in the process but is not in the sensitivity list [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:102]
+WARNING: [Synth 8-614] signal 'alarmbtn' is read in the process but is not in the sensitivity list [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:102]
+WARNING: [Synth 8-614] signal 'last_alarmbtn' is read in the process but is not in the sensitivity list [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:102]
+WARNING: [Synth 8-614] signal 't_timer' is read in the process but is not in the sensitivity list [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:102]
+WARNING: [Synth 8-614] signal 's_alarmstatus' is read in the process but is not in the sensitivity list [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:102]
+WARNING: [Synth 8-614] signal 's_count' is read in the process but is not in the sensitivity list [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:102]
+WARNING: [Synth 8-614] signal 's_state' is read in the process but is not in the sensitivity list [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:102]
+WARNING: [Synth 8-6014] Unused sequential element last_speed_reg was removed.  [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:109]
+WARNING: [Synth 8-6014] Unused sequential element last_iter_reg was removed.  [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:124]
+WARNING: [Synth 8-6014] Unused sequential element last_alarmbtn_reg was removed.  [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:133]
+WARNING: [Synth 8-5787] Register s_alarmstatus_reg in module controller is clocked by two different clocks in the same process. This may cause simulation mismatches and synthesis errors. Consider using different process statements  [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:136]
+WARNING: [Synth 8-5787] Register s_alarmstatus_reg in module controller is clocked by two different clocks in the same process. This may cause simulation mismatches and synthesis errors. Consider using different process statements  [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'controller' (2#1) [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'led_top' (3#1) [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/led_top.vhd:44]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 429.730 ; gain = 153.219
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 412.730 ; gain = 154.969
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -50,53 +62,50 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 429.730 ; gain = 153.219
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 412.730 ; gain = 154.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 429.730 ; gain = 153.219
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 412.730 ; gain = 154.969
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/constrs_1/imports/led_board/Zybo-Z7-Master.xdc]
-Finished Parsing XDC File [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/constrs_1/imports/led_board/Zybo-Z7-Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/constrs_1/imports/led_board/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/led_top_propImpl.xdc].
+Parsing XDC File [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/constrs_1/imports/led_board/Zybo-Z7-Master.xdc]
+Finished Parsing XDC File [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/constrs_1/imports/led_board/Zybo-Z7-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/constrs_1/imports/led_board/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/led_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/led_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 794.184 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 777.793 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 794.184 ; gain = 517.672
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 777.793 ; gain = 520.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 794.184 ; gain = 517.672
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 777.793 ; gain = 520.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 794.184 ; gain = 517.672
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 777.793 ; gain = 520.031
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "t_timer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_speed" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_blink" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "s_R" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "s_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "s_state" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "s_speed" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "s_blink" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-327] inferring latch for variable 's_speed_reg' [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:269]
-WARNING: [Synth 8-327] inferring latch for variable 's_blink_reg' [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:272]
-WARNING: [Synth 8-327] inferring latch for variable 's_iter_reg' [C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd:137]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 794.184 ; gain = 517.672
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 777.793 ; gain = 520.031
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -117,21 +126,21 @@ Detailed RTL Component Info :
 +---Registers : 
 	               24 Bit    Registers := 1     
 	                8 Bit    Registers := 4     
-	                7 Bit    Registers := 1     
-	                6 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 3     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 7     
+	                1 Bit    Registers := 8     
 +---Muxes : 
 	   2 Input     24 Bit        Muxes := 1     
 	  10 Input      8 Bit        Muxes := 2     
 	  11 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 5     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 9     
 	   3 Input      6 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 3     
 	   3 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 12    
 	   6 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -167,18 +176,19 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
 	                8 Bit    Registers := 3     
-	                7 Bit    Registers := 1     
-	                6 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 3     
 	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 +---Muxes : 
 	  10 Input      8 Bit        Muxes := 2     
 	  11 Input      8 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 5     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 9     
 	   3 Input      6 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 3     
 	   3 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 11    
 	   6 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -199,10 +209,16 @@ Warning: Parallel synthesis criteria is not met
 INFO: [Synth 8-5546] ROM "led/module/t_timer" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3331] design led_top has unconnected port btn[2]
 WARNING: [Synth 8-3331] design led_top has unconnected port btn[1]
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\led/s_blink_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led/s_speed_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\led/s_speed_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led/s_speed_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\led/s_speed_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led/s_speed_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led/s_speed_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led/s_blink_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led/s_blink_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led/s_blink_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led/s_blink_reg[4] )
+INFO: [Synth 8-3886] merging instance 'led/s_blink_reg[3]' (FDE) to 'led/s_blink_reg[5]'
+INFO: [Synth 8-3886] merging instance 'led/s_blink_reg[4]' (FDE) to 'led/s_blink_reg[5]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led/s_blink_reg[5] )
 INFO: [Synth 8-3886] merging instance 'led/s_B_reg[0]' (FDSE) to 'led/s_B_reg[6]'
 INFO: [Synth 8-3886] merging instance 'led/s_B_reg[1]' (FDSE) to 'led/s_B_reg[6]'
@@ -223,13 +239,17 @@ INFO: [Synth 8-3886] merging instance 'led/s_R_reg[2]' (FDSE) to 'led/s_R_reg[6]
 INFO: [Synth 8-3886] merging instance 'led/s_R_reg[3]' (FDSE) to 'led/s_R_reg[6]'
 INFO: [Synth 8-3886] merging instance 'led/s_R_reg[4]' (FDSE) to 'led/s_R_reg[6]'
 INFO: [Synth 8-3886] merging instance 'led/s_R_reg[5]' (FDSE) to 'led/s_R_reg[6]'
+WARNING: [Synth 8-3332] Sequential element (led/s_speed_reg[5]) is unused and will be removed from module led_top.
+WARNING: [Synth 8-3332] Sequential element (led/s_speed_reg[4]) is unused and will be removed from module led_top.
+WARNING: [Synth 8-3332] Sequential element (led/s_speed_reg[3]) is unused and will be removed from module led_top.
+WARNING: [Synth 8-3332] Sequential element (led/s_speed_reg[2]) is unused and will be removed from module led_top.
+WARNING: [Synth 8-3332] Sequential element (led/s_speed_reg[1]) is unused and will be removed from module led_top.
+WARNING: [Synth 8-3332] Sequential element (led/s_speed_reg[0]) is unused and will be removed from module led_top.
 WARNING: [Synth 8-3332] Sequential element (led/s_blink_reg[5]) is unused and will be removed from module led_top.
-WARNING: [Synth 8-3332] Sequential element (led/s_blink_reg[4]) is unused and will be removed from module led_top.
-WARNING: [Synth 8-3332] Sequential element (led/s_blink_reg[3]) is unused and will be removed from module led_top.
 WARNING: [Synth 8-3332] Sequential element (led/s_blink_reg[2]) is unused and will be removed from module led_top.
-WARNING: [Synth 8-3332] Sequential element (led/s_blink_reg[0]) is unused and will be removed from module led_top.
+WARNING: [Synth 8-3332] Sequential element (led/s_blink_reg[1]) is unused and will be removed from module led_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 794.184 ; gain = 517.672
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 777.793 ; gain = 520.031
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -241,13 +261,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 794.184 ; gain = 517.672
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 777.793 ; gain = 520.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 805.668 ; gain = 529.156
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 789.398 ; gain = 531.637
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -258,9 +278,9 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (led/s_iter_reg) is unused and will be removed from module led_top.
+WARNING: [Synth 8-3332] Sequential element (led/s_blink_reg[0]) is unused and will be removed from module led_top.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 806.438 ; gain = 529.926
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 790.164 ; gain = 532.402
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -284,7 +304,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.438 ; gain = 529.926
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 790.164 ; gain = 532.402
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -297,7 +317,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.438 ; gain = 529.926
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 790.164 ; gain = 532.402
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -309,25 +329,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.438 ; gain = 529.926
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 790.164 ; gain = 532.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.438 ; gain = 529.926
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 790.164 ; gain = 532.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.438 ; gain = 529.926
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 790.164 ; gain = 532.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.438 ; gain = 529.926
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 790.164 ; gain = 532.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -345,34 +365,35 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |     9|
-|3     |LUT1   |     4|
-|4     |LUT2   |     7|
-|5     |LUT3   |    50|
-|6     |LUT4   |    18|
-|7     |LUT5   |    10|
-|8     |LUT6   |    16|
-|9     |FDCE   |    41|
-|10    |FDRE   |    14|
-|11    |FDSE   |     5|
-|12    |LD     |     1|
-|13    |IBUF   |     2|
-|14    |OBUF   |     3|
+|3     |LUT1   |     1|
+|4     |LUT2   |     4|
+|5     |LUT3   |    54|
+|6     |LUT4   |    15|
+|7     |LUT5   |     9|
+|8     |LUT6   |    20|
+|9     |FDCE   |    42|
+|10    |FDPE   |     1|
+|11    |FDRE   |    21|
+|12    |FDSE   |     5|
+|13    |LDC    |     1|
+|14    |IBUF   |     2|
+|15    |OBUF   |     3|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+-------------+-----------+------+
 |      |Instance     |Module     |Cells |
 +------+-------------+-----------+------+
-|1     |top          |           |   181|
-|2     |  led        |controller |   150|
+|1     |top          |           |   188|
+|2     |  led        |controller |   157|
 |3     |    \module  |timer      |    63|
 +------+-------------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.438 ; gain = 529.926
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 790.164 ; gain = 532.402
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 806.438 ; gain = 165.473
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 806.438 ; gain = 529.926
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 790.164 ; gain = 167.340
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 790.164 ; gain = 532.402
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -380,14 +401,14 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
-  LD => LDCE: 1 instances
+  LDC => LDCE: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-52 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+58 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 808.602 ; gain = 544.211
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 791.449 ; gain = 546.566
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.runs/synth_1/led_top.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.runs/synth_1/led_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file led_top_utilization_synth.rpt -pb led_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 808.602 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Dec  7 21:07:32 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 791.449 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 19 16:51:11 2018...

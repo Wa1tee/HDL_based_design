@@ -22,19 +22,18 @@ create_project -in_memory -part xc7z020clg400-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.cache/wt [current_project]
-set_property parent.project_path C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.cache/wt [current_project]
+set_property parent.project_path C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property board_part digilentinc.com:zybo-z7-20:part0:1.0 [current_project]
-set_property ip_output_repo c:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.cache/ip [current_project]
+set_property ip_output_repo c:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd
-  C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller_tb.vhd
-  C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/timer.vhd
-  C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/timer_tb.vhd
-  C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/sources_1/new/led_top.vhd
+  C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller.vhd
+  C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/controller_tb.vhd
+  C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/timer.vhd
+  C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/timer_tb.vhd
+  C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/sources_1/new/led_top.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -44,8 +43,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/constrs_1/imports/led_board/Zybo-Z7-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/waitee/Documents/koodit/vivado/HDL_based_design/led_board/led_board.srcs/constrs_1/imports/led_board/Zybo-Z7-Master.xdc]
+read_xdc C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/constrs_1/imports/led_board/Zybo-Z7-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/antti/Documents/koodit/HDL_based_design/led_board/led_board.srcs/constrs_1/imports/led_board/Zybo-Z7-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
