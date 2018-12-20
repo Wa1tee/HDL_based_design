@@ -1,6 +1,6 @@
 # HDL_based_design
 
-Coursework for the course HDL based design in University of Turku.
+Coursework for the course HDL based design in University of Turku. Made using the free version of Vivado
 
 1. BCD-to-bar
 
