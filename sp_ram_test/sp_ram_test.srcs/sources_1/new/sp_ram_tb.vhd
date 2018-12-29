@@ -36,15 +36,15 @@ end sp_ram_tb;
 
 architecture Behavioral of sp_ram_tb is
 	component sp_ram
-		Generic ( 	data_width : integer := 16;
-					addr_width : integer := 3
+		Generic ( data_width : integer := 16;
+							addr_width : integer := 3
 		);
 
-    	Port (  addr	: in STD_LOGIC_VECTOR (addr_width -1 downto 0);
-           		data	: inout STD_LOGIC_VECTOR (data_width -1 downto 0);
-           		rw 		: in STD_LOGIC;
-           		clock 	: in STD_LOGIC
-           );
+    Port (  addr	: in STD_LOGIC_VECTOR (addr_width -1 downto 0);
+          	data	: inout STD_LOGIC_VECTOR (data_width -1 downto 0);
+          	rw 		: in STD_LOGIC;
+          	clock : in STD_LOGIC
+          );
 
 	end component sp_ram;
 
@@ -55,7 +55,7 @@ architecture Behavioral of sp_ram_tb is
 		rw <= '1';
 		if (rising_edge(clock)) then
 			addr <= f_addr;
-			
+
 		end if;
 		return return_signal;
 	end write;
