@@ -32,53 +32,34 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity sp_ram is
-	Generic ( 	data_width : integer := 16;
-				addr_width : integer := 3
+	Generic ( 	
+		data_width : integer := 16;
+		addr_width : integer := 3
 		);
-    Port ( addr		: in STD_LOGIC_VECTOR (addr_width -1 downto 0);
-           data		: inout STD_LOGIC_VECTOR (data_width -1 downto 0);
-           rw 		: in STD_LOGIC;
-           clock 	: in STD_LOGIC
-           );
+  Port ( 
+    addr	: in STD_LOGIC_VECTOR (addr_width -1 downto 0);
+    data	: inout STD_LOGIC_VECTOR (data_width -1 downto 0);
+    rw 		: in STD_LOGIC;
+    clock : in STD_LOGIC
+    );
 end sp_ram;
 
 architecture Behavioral of sp_ram is
-	function write (f_addr : in STD_LOGIC_VECTOR(addr_width -1 downto 0),
-					f_data : in STD_LOGIC_VECTOR(data_width -1 downto 0)) 
-	return STD_LOGIC is
-	begin
-		
-		if (rising_edge(clock)) then
-			
-			
-		end if;
-		return return_signal;
-	end write;
-
-	function read ( f_addr : in STD_LOGIC_VECTOR(addr_width -1 downto 0),
-					f_data : in STD_LOGIC_VECTOR(data_width -1 downto 0)) 
-	return STD_LOGIC is
-	begin
-		if (rising_edge(clock)) then
-			
-		end if;
-
-		return '0';
-	end read;
+	--signal reg : STD_LOGIC_VECTOR(addr_width -1 downto 0);
+	signal ram : STD_LOGIC_VECTOR(data_width -1 downto 0);
+	
 begin
 	RTL : process (addr, data, rw, clock)
-	signal s_addr : STD_LOGIC_VECTOR(addr_width -1 downto 0);
-	signal s_data : STD_LOGIC_VECTOR(data_width -1 downto 0);
-
 	begin
-	  if (rising_edge(clock)) then
-		if (rw = '1') then
-			--write
 
-		else
-			--read
+	  if (rising_edge(clock)) then
+			if (rw = '1') then
+				--write
+				ram(addr) <= data;
+			else
+				data <= ram(addr);
+			end if;
 		end if;
-	  end if;
 	end process RTL;
 
 end Behavioral;
