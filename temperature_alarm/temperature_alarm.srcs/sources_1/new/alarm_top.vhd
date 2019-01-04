@@ -38,7 +38,10 @@ entity alarm_top is
   	sw 			: in STD_LOGIC_VECTOR(1 downto 0);
   	led5_r	: out STD_LOGIC;
     led5_g	: out STD_LOGIC;
-    led5_b	: out STD_LOGIC
+    led5_b	: out STD_LOGIC;
+
+    lumi		: in STD_LOGIC_VECTOR(11 downto 0);
+    buzz 		: out STD_LOGIC
   );
 end alarm_top;
 
