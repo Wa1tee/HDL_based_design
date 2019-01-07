@@ -61,16 +61,84 @@ architecture Behavioral of alarm_top is
     	snooze				: in STD_LOGIC; -- Button 2
 
     	-- Analog sensor. Testing with illuminance sensor
-    	sensor  			: in STD_LOGIC_VECTOR(255 downto 0);
+    	sensor  			: in STD_LOGIC_VECTOR(11 downto 0);
 
-    	buzzer  : out STD_LOGIC_VECTOR(255 downto 0);
-    	R 			: out STD_LOGIC_VECTOR(255 downto 0);
-    	G 			: out STD_LOGIC_VECTOR(255 downto 0);
-    	B 			: out STD_LOGIC_VECTOR(255 downto 0)
+    	buzzer  : out STD_LOGIC_VECTOR(7 downto 0);
+    	R 			: out STD_LOGIC_VECTOR(7 downto 0);
+    	G 			: out STD_LOGIC_VECTOR(7 downto 0);
+    	B 			: out STD_LOGIC_VECTOR(7 downto 0)
   	);
 	end component;
 
+
+  signal R : STD_LOGIC_vector(7 downto 0);
+  signal G : STD_LOGIC_vector(7 downto 0);
+  signal B : STD_LOGIC_vector(7 downto 0);
+  signal buzzer : STD_LOGIC_vector(7 downto 0);
+
+  
+  signal R_out : STD_LOGIC;
+  signal G_out : STD_LOGIC;
+  signal B_out : STD_LOGIC;
+  signal buzz_out : STD_LOGIC;
+    
+  signal count : unsigned(7 downto 0);
+  signal last_count : unsigned(7 downto 0);
+
 begin
 
+  module : alarm
+  port map(
+    clock         => sysclk,
+    reset         => btn(0),
+    calibrate     => btn(1),
+    snooze        => btn(2),
+    power_switch  => sw(0),
+    buzzer_switch => sw(1),
+    sensor        => lumi,
+    buzzer        => buzz,
+    R             => R,
+    G             => G,
+    B             => B
+  );
 
+  top : process (sysclk, R, G, B, buzzer)
+    if (rising_edge(sysclk)) then
+      if (count < unsigned(R)) then
+        R_out <= '1';
+      else
+        R_out <= '0';
+      end if;
+  
+      if (count < unsigned(G)) then
+        G_out <= '1';
+      else
+        G_out <= '0';
+      end if;
+  
+      if (count < unsigned(B)) then
+        B_out <= '1';
+      else
+        B_out <= '0';
+      end if;
+      if (count < unsigned(buzzer)) then
+        buzz_out <= '1';
+      else
+        buzz_out <= '0';
+      end if;
+  
+      if (count = "11111111") then
+        count <= "00000000";
+      else
+        count <= last_count + "1";
+      end if;
+  
+      last_count <= count;
+  
+      led5_r <= R_out;
+      led5_g <= G_out;
+      led5_b <= B_out;
+      buzz   <= buzz_out;
+    end if;
+  end process top;
 end Behavioral;

@@ -46,12 +46,12 @@ entity alarm is
     snooze				: in STD_LOGIC; -- Button
 
     -- Analog sensor. Testing with illuminance sensor
-    sensor  			: in STD_LOGIC_VECTOR(128 downto 0);
+    sensor  			: in STD_LOGIC_VECTOR(11 downto 0);
 
-    buzzer  : out STD_LOGIC_VECTOR(128 downto 0);
-    R 			: out STD_LOGIC_VECTOR(255 downto 0);
-    G 			: out STD_LOGIC_VECTOR(255 downto 0);
-    B 			: out STD_LOGIC_VECTOR(255 downto 0)
+    buzzer  : out STD_LOGIC_VECTOR(7 downto 0);
+    R 			: out STD_LOGIC_VECTOR(7 downto 0);
+    G 			: out STD_LOGIC_VECTOR(7 downto 0);
+    B 			: out STD_LOGIC_VECTOR(7 downto 0)
 
   );
 end alarm;
@@ -82,14 +82,41 @@ architecture Behavioral of alarm is
 	signal ram_data : STD_LOGIC_VECTOR (data_width -1 downto 0);
 	signal ram_rw 	: STD_LOGIC;
 
+	signal last_resetbtn 	: STD_LOGIC := '0';
+  signal last_snooze 		: STD_LOGIC := '0';
+  signal last_calibrate : STD_LOGIC := '0';
+
+	signal s_count      : unsigned(6 downto 0) := "0000000";
+  signal s_last_count : unsigned(6 downto 0) := "0000000";
+
+  signal s_alarmstatus      : unsigned(6 downto 0) := "0000000";
+  signal s_last_alarmstatus : unsigned(6 downto 0) := "0000000";
+
+  signal s_calibration      : STD_LOGIC := '1';
+  signal s_last_calibration : STD_LOGIC;
+
+  signal s_snoozestatus      : unsigned(6 downto 0) := "0000000";
+  signal s_last_snoozestatus : unsigned(6 downto 0) := "0000000";
+
 begin
+
+module : timer
+	Port map (
+		t_reset => t_reset,
+		t_clock => t_clock,
+		t_timer => t_timer
+	);
 
 main : process (reset, clock)
 begin
 	if (power_switch = '1') then
 		
-  	if (reset = '1') then
-	  	  
+  	if (reset = '1' AND last_resetbtn = '0') then
+  		s_calibration <= '1';
+  		s_snoozestatus <= "0000000";
+  		s_alarmstatus <= "0000000";
+  		s_count <= "0000000";
+
 	  elsif (rising_edge(clock)) then
 	
   	end if; -- reset/clock edge
