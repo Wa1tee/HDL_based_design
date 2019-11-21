@@ -40,8 +40,8 @@ entity alarm_top is
     led5_g	: out STD_LOGIC;
     led5_b	: out STD_LOGIC;
 
-    lumi		: in STD_LOGIC_VECTOR(11 downto 0);
-    buzz 		: out STD_LOGIC
+    lumi		: in STD_LOGIC_VECTOR(11 downto 0)
+    --buzz 		: out STD_LOGIC
   );
 end alarm_top;
 
@@ -63,7 +63,7 @@ architecture Behavioral of alarm_top is
     	-- Analog sensor. Testing with illuminance sensor
     	sensor  			: in STD_LOGIC_VECTOR(11 downto 0);
 
-    	buzzer  : out STD_LOGIC_VECTOR(7 downto 0);
+    	--buzzer  : out STD_LOGIC_VECTOR(7 downto 0);
     	R 			: out STD_LOGIC_VECTOR(7 downto 0);
     	G 			: out STD_LOGIC_VECTOR(7 downto 0);
     	B 			: out STD_LOGIC_VECTOR(7 downto 0)
@@ -102,7 +102,7 @@ begin
     B             => B
   );
 
-  top : process (sysclk, R, G, B, buzzer)
+  top : process (sysclk, R, G, B)
     if (rising_edge(sysclk)) then
       if (count < unsigned(R)) then
         R_out <= '1';
@@ -121,11 +121,11 @@ begin
       else
         B_out <= '0';
       end if;
-      if (count < unsigned(buzzer)) then
-        buzz_out <= '1';
-      else
-        buzz_out <= '0';
-      end if;
+      --if (count < unsigned(buzzer)) then
+      --  buzz_out <= '1';
+      --else
+      --  buzz_out <= '0';
+      --end if;
   
       if (count = "11111111") then
         count <= "00000000";

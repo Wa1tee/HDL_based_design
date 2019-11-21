@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov 13 16:15:56 2019
+# Process ID: 13744
+# Current directory: C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15268 C:\Users\antti\Documents\koodit\HDL_based_design\temperature_alarm\temperature_alarm.xpr
+# Log file: C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/vivado.log
+# Journal file: C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.xpr
+update_compile_order -fileset sources_1
+create_bd_design "xadc_read"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xadc_wiz:3.3 xadc_wiz_0
+endgroup
+set_property -dict [list CONFIG.ACQUISITION_TIME {10} CONFIG.DCLK_FREQUENCY {125} CONFIG.SINGLE_CHANNEL_SELECTION {VAUXP0_VAUXN0} CONFIG.ADC_CONVERSION_RATE {1000} CONFIG.EXTERNAL_MUX_CHANNEL {VP_VN} CONFIG.SINGLE_CHANNEL_ACQUISITION_TIME {false}] [get_bd_cells xadc_wiz_0]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins xadc_wiz_0/Vaux0]
+endgroup
+delete_bd_objs [get_bd_intf_nets Vaux0_0_1]
+startgroup
+make_bd_pins_external  [get_bd_pins xadc_wiz_0/vauxn0]
+endgroup
+delete_bd_objs [get_bd_intf_ports Vaux0_0]
+startgroup
+make_bd_pins_external  [get_bd_pins xadc_wiz_0/vauxp0]
+endgroup

@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov 19 16:47:27 2019
+# Process ID: 8628
+# Current directory: C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.runs/synth_1
+# Command line: vivado.exe -log alarm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alarm.tcl
+# Log file: C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.runs/synth_1/alarm.vds
+# Journal file: C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source alarm.tcl -notrace
+Command: synth_design -top alarm -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8460 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 700.809 ; gain = 177.551
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-1031] t_reset is not declared [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:108]
+ERROR: [Synth 8-1031] t_clock is not declared [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:109]
+ERROR: [Synth 8-1031] t_timer is not declared [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:110]
+ERROR: [Synth 8-1568] actual of formal out port t_timer cannot be an expression [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:110]
+ERROR: [Synth 8-2774] type std_logic does not match with the integer literal [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:126]
+ERROR: [Synth 8-2774] type std_logic does not match with the integer literal [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:127]
+ERROR: [Synth 8-2774] type std_logic does not match with the integer literal [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:129]
+ERROR: [Synth 8-2774] type std_logic does not match with the integer literal [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:130]
+ERROR: [Synth 8-1779] cannot read from 'out' object g ; use 'buffer' or 'inout' [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:128]
+ERROR: [Synth 8-2778] type error near g ; expected type boolean [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:128]
+ERROR: [Synth 8-2774] type std_logic does not match with the integer literal [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:132]
+ERROR: [Synth 8-2774] type std_logic does not match with the integer literal [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:133]
+ERROR: [Synth 8-1779] cannot read from 'out' object b ; use 'buffer' or 'inout' [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:131]
+ERROR: [Synth 8-2778] type error near b ; expected type boolean [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:131]
+ERROR: [Synth 8-2774] type std_logic does not match with the integer literal [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:135]
+ERROR: [Synth 8-2774] type std_logic does not match with the integer literal [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:136]
+ERROR: [Synth 8-1779] cannot read from 'out' object o ; use 'buffer' or 'inout' [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:134]
+ERROR: [Synth 8-2778] type error near o ; expected type boolean [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:134]
+ERROR: [Synth 8-1779] cannot read from 'out' object r ; use 'buffer' or 'inout' [C:/Users/antti/Documents/koodit/HDL_based_design/temperature_alarm/temperature_alarm.srcs/sources_1/new/alarm.vhd:125]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 761.941 ; gain = 238.684
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 20 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 16:47:39 2019...

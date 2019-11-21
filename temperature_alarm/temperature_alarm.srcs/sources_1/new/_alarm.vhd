@@ -48,7 +48,7 @@ entity alarm is
     snooze				: in STD_LOGIC; -- Button
 
     -- Analog sensor. Testing with potentiometer
-    --sensor  			: in STD_LOGIC_VECTOR(11 downto 0);
+    sensor  			: in STD_LOGIC_VECTOR(11 downto 0);
 
     --buzzer  : out STD_LOGIC_VECTOR(7 downto 0);
     R 			: out STD_LOGIC;                   -- Red    (255, 0,   0  )
@@ -121,31 +121,14 @@ begin
   		s_count         <= "0000000";
 
 	  elsif (rising_edge(clock)) then
-      if (s_count < "1111110") then
-        if (R) then
-          R <= 0;
-          G <= 1;
-        elsif (G) then
-          G <= 0;
-          B <= 1;
-        elsif (B) then
-          B <= 0;
-          O <= 1;
-        elsif (O) then
-          O <= 0;
-          R <= 1;
-        end if;
-      end if;
-      s_last_count <= s_count;
-      s_count <= s_last_count + 1;
 
     end if; -- reset/clock edge
 	end if; -- power switch
 end process main;
 
---calibration : process()
---begin
+calibration : process()
+begin
 
---end process calibration;
+end process calibration;
 
 end Behavioral;
